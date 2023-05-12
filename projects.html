@@ -1,0 +1,24 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+{% assign projects = site.projects %}
+{% for proj in projects %}
+<div class="proj-item">
+  <div class="proj-teaser">
+    <a href="{{proj.url}}">
+      <img src="/images/projects/{{ proj.slug }}_small.png" alt="{{proj.slug}} teaser"/>
+    </a>
+  </div>
+  <div class="proj-info">
+    <div class="proj-name">
+        <a href="{{proj.url}}">{{ proj.name }}</a>
+    </div>
+    <div class="proj-description">
+        {{ proj.description }}
+    </div>
+  </div>
+</div>
+{% endfor %}

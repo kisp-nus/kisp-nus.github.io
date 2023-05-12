@@ -27,6 +27,11 @@ url: "https://kisp-nus.github.io" # the base hostname & protocol for your site, 
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
+collections:
+  projects:
+    output: True
+    permalink: /:collection/:name
+
 # Build settings
 theme: minima
 plugins:

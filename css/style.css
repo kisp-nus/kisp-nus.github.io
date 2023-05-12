@@ -1,0 +1,42 @@
+.proj-item {
+  margin: 2em 0;
+  line-height: 1em;
+}
+
+.proj-teaser {
+  float: left;
+}
+
+.proj-teaser img {
+  width: 100px;
+  /* border: 1px solid black; */
+  margin-right: 5px;
+}
+  
+.proj-info {
+  float: left;
+}
+
+.proj-name {
+  margin-left: 5px;
+  margin-bottom: .5em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.proj-description {
+  font-size: 75%;
+  margin-bottom: .75em;
+  margin-left: 5px;
+}
+
+.project-title {
+  clear: both;
+  text-align: center;
+}
+
+.project-image {
+  clear: both;
+  float: center;
+  text-align: center;
+}
