@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <header class="post-header">
+    <div class="profile-image">
+      <img src="/images/people/{{ page.slug }}.jpeg" alt="{{page.name}} profile picture"/>
+    </div>
+    <div class="profile-header">
+    <div class="profile-name">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </div>
+    <div class="profile-role">{{ page.role }}</div>
+    </div>
+  </header>
+
+  <div class="post-content">{{ content }}</div>
+</article>

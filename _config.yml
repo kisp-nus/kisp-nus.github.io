@@ -31,6 +31,9 @@ collections:
   projects:
     output: True
     permalink: /:collection/:name
+  people:
+    output: True
+    permalink: /:collection/:name
 
 # Build settings
 theme: minima

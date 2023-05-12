@@ -40,3 +40,53 @@
   float: center;
   text-align: center;
 }
+
+
+.profile {
+  margin: 2em 0;
+  line-height: 1em;
+  border: 1px solid black;
+  float: left;
+}
+
+.profile-pic {
+  clear: both;
+}
+
+.profile-info {
+  clear: both
+}
+
+.profile-name {
+  margin-left: 5px;
+  margin-bottom: .5em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.profile-text {
+  margin-left: 5px;
+  margin-bottom: 1.5em;
+  line-height: 1.2em;
+  font-size: 75%;
+}
+
+.profile-image {
+  float: left;
+  width: 30%;
+}
+
+.profile-header {
+  float: right;
+  width: 70%;
+}
+
+.profile-role {
+  margin-left: 5px;
+  line-height: 1.2em;
+}
+
+.post-content {
+  padding-top: 20px;
+  clear: both;
+}
