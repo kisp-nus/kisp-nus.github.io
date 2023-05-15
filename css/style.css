@@ -43,9 +43,9 @@
 
 
 .profile {
-  margin: 2em 0;
+  margin: 10px 10px 10px 10px;
   line-height: 1em;
-  border: 1px solid black;
+  /* border: 1px solid red; */
   float: left;
 }
 
