@@ -1,8 +1,7 @@
 ---
 title: "Capstone: A Capability-based Foundation for Trustless Secure Memory Access"
 authors:
- - name: Yu, Jason Zhijingcheng
-   url: https://www.comp.nus.edu.sg/~yuz1996/
+ - slug: jason
  - name: Conrad Watt
    url: https://www.cl.cam.ac.uk/~caw77/
  - name: Aditya Badole
