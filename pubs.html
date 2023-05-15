@@ -8,7 +8,13 @@ permalink: /pubs/
 {% for pub in pubs %}
 <div class="pub-item">
   <div class="pub-title"><a href="{{pub.pub_url}}">{{ pub.title }}</a></div>
-  <div class="pub-authors">{{ pub.authors }}</div>
+  <div class="pub-authors">
+    {% for a in pub.authors %}
+    {% if a.url %}<a href="{{a.url}}">{% endif %}
+    {{ a.name }}{% unless forloop.last %},{% endunless %}
+    {% if a.url %}</a>{% endif %}
+    {% endfor %}
+  </div>
   <div class="pub-info">{{ pub.publication }}, {{ pub.year}}</div>
 </div>
 {% endfor %}
