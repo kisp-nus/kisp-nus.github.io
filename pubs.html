@@ -1,0 +1,14 @@
+---
+layout: page
+title: Publications
+permalink: /pubs/
+---
+
+{% assign pubs = site.pubs %}
+{% for pub in pubs %}
+<div class="pub-item">
+  <div class="pub-title"><a href="{{pub.pub_url}}">{{ pub.title }}</a></div>
+  <div class="pub-authors">{{ pub.authors }}</div>
+  <div class="pub-info">{{ pub.publication }}, {{ pub.year}}</div>
+</div>
+{% endfor %}
