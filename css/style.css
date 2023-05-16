@@ -24,6 +24,19 @@
   font-weight: bold;
 }
 
+.proj-lead {
+  font-size: 75%;
+  margin-bottom: .75em;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.proj-team {
+  font-size: 75%;
+  margin-bottom: .75em;
+  margin-left: 5px;
+}
+
 .proj-description {
   font-size: 75%;
   margin-bottom: .75em;

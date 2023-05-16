@@ -10,17 +10,8 @@ permalink: /pubs/
 <div class="pub-item">
   <div class="pub-title"><a href="{{pub.pub_url}}">{{ pub.title }}</a></div>
   <div class="pub-authors">
-    {% for a in pub.authors %}
-    {% if a.slug %}
-      {% assign p = people | where: "slug", a.slug | first %}
-      <a href="{{ p.url }}">{{ p.title }}</a>{% unless forloop.last %},{% endunless %}
-    {% else %}
-      {% if a.url %}<a href="{{a.url}}">{% endif -%}
-      {{ a.name -}}
-      {% if a.url %}</a>{% endif -%}
-      {% unless forloop.last %},{% endunless %}
-    {% endif %}
-    {% endfor %}
+    {% assign authors = pub.authors %}
+    {% include author_list.html %}
   </div>
   <div class="pub-info">{{ pub.publication }}, {{ pub.year}}</div>
 </div>

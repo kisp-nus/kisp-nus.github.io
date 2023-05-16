@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign people = site.people %}
+
 <article class="post">
 
   <header class="post-header">
@@ -10,6 +12,18 @@ layout: default
     </div>
     <div class="project-image">
         <img src="/images/projects/{{ page.slug }}.png" alt="Project {{page.slug}} logo"/>
+      </div>
+
+      <div class="proj-lead">
+        Project lead:
+        {%- assign a = page.lead -%}
+        {%- assign nocomma = true -%}
+        {%- include author.html -%}
+      </div>
+      <div class="proj-team">
+        Project team:
+        {%- assign authors = page.people -%}
+        {%- include author_list.html -%}
       </div>
   </header>
 

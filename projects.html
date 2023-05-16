@@ -5,6 +5,7 @@ permalink: /projects/
 ---
 
 {% assign projects = site.projects %}
+{% assign people = site.people %}
 {% for proj in projects %}
 <div class="proj-item">
   <div class="proj-teaser">
@@ -15,6 +16,17 @@ permalink: /projects/
   <div class="proj-info">
     <div class="proj-name">
         <a href="{{proj.url}}">{{ proj.name }}</a>
+    </div>
+    <div class="proj-lead">
+      Project lead:
+      {%- assign a = proj.lead -%}
+      {%- assign nocomma = true -%}
+      {%- include author.html -%}
+    </div>
+    <div class="proj-team">
+      Project team:
+      {%- assign authors = proj.people -%}
+      {%- include author_list.html -%}
     </div>
     <div class="proj-description">
         {{ proj.description }}

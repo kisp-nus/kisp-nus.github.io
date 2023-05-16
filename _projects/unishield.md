@@ -3,6 +3,13 @@ layout: project
 name: Unishield Project
 slug: unishield
 description: Unishield provides hardware security via the turbo encambulator.
+lead: 
+  slug: jason
+people:
+ - slug: jason
+ - slug: kareem
+ - name: Trevor E. Carlson
+   url: https://www.comp.nus.edu.sg/~tcarlson/
 ---
 
 ## Chlamydem ferre arbore deus dilacerant videri
