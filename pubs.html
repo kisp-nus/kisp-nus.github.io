@@ -10,8 +10,7 @@ permalink: /pubs/
 <div class="pub-item">
   <div class="pub-title"><a href="{{pub.pub_url}}">{{ pub.title }}</a></div>
   <div class="pub-authors">
-    {% assign authors = pub.authors %}
-    {% include author_list.html %}
+    {% include author_list.html authors = pub.authors %}
   </div>
   <div class="pub-info">{{ pub.publication }}, {{ pub.year}}</div>
 </div>
