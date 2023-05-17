@@ -19,11 +19,14 @@ permalink: /projects/
     </div>
     <div class="proj-lead">
       Project lead:
-      {%- include author.html a = proj.lead nocomma = true -%}
+      {%- assign a = proj.lead -%}
+      {%- assign nocomma = true -%}
+      {%- include author.html -%}
     </div>
     <div class="proj-team">
       Project team:
-      {%- include author_list.html authors = proj.people -%}
+      {%- assign authors = proj.people -%}
+      {%- include author_list.html -%}
     </div>
     <div class="proj-description">
         {{ proj.description }}

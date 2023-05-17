@@ -16,11 +16,14 @@ layout: default
 
       <div class="proj-lead">
         Project lead:
-        {%- include author.html a = page.lead, nocomma = true -%}
+        {%- assign a = page.lead -%}
+        {%- assign nocomma = true -%}
+        {%- include author.html -%}
       </div>
       <div class="proj-team">
         Project team:
-        {%- include author_list.html authors = page.people -%}
+        {%- assign authors = page.people -%}
+        {%- include author_list.html -%}
       </div>
   </header>
 
