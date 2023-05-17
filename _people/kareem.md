@@ -3,6 +3,10 @@ layout: person
 title: Kareem Shehata
 slug: kareem
 role: PhD Student
+email: kareem@shehata.ca
+github_username: kshehata
+twitter_username: km_shehata
+linkedin_username: kshehata
 ---
 
 Hi, I'm Kareem! I'm passionate about the discovery, synthesis, and

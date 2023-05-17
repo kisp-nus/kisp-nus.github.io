@@ -99,6 +99,11 @@
   line-height: 1.2em;
 }
 
+.profile-social-links {
+  margin-left: 5px;
+  line-height: 1.2em;
+}
+
 .post-content {
   padding-top: 20px;
   clear: both;

@@ -13,6 +13,8 @@ layout: default
       <h1 class="post-title">{{ page.title | escape }}</h1>
     </div>
     <div class="profile-role">{{ page.role }}</div>
+    {% assign user = page %}
+    <div class="profile-social-links">{% include social_links.html %}</div>
     </div>
   </header>
 
