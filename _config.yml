@@ -37,8 +37,15 @@ collections:
   pubs:
     output: False
 
+# GitHub mandatory config
+lsi: false
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
 kramdown:
   math_engine: mathjax
+  syntax_highlighter: rouge
 
 # Build settings
 theme: minima
