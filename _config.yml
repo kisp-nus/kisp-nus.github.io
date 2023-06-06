@@ -21,7 +21,7 @@
 title: NUS KISP Lab
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Keep It Simple and Private
+  Keep It Secure and Private
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kisp-nus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
