@@ -1,8 +1,8 @@
 ---
 layout: project
-name: Unishield Project
-slug: unishield
-description: Unishield provides hardware security via the turbo encambulator.
+name: STARCH
+slug: starch
+description: Security and Trust in Architecture Designs
 lead: 
   slug: jason
 people:
