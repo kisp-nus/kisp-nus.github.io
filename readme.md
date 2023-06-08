@@ -6,12 +6,20 @@ hosted on [GitHub pages](https://pages.github.com/).
 
 ## Development
 
-My suggestion for working on this site is to set up Jekyll locally on
-your machine following the [Jekyll Docs](https://pages.github.com/)
-and test everything locally before pushing to GitHub. As of right now
-anything pushed to the main branch goes live immediately. In the
-future it may be required to push to a staging branch for testing
-before merging to main.
+**Please take a branch and send a PR for any larger changes to the
+site, including adding new projects or people.**
+
+For minor changes, please check all changes locally before pushing
+changes to main. As of right now anything pushed to the main branch
+goes live immediately.
+
+You can follow the [Jekyll docs](https://jekyllrb.com/docs/) for
+setting up Jekyll locally, but it's generally pretty easy:
+
+1. Make sure you have Ruby, RubyGems, and gcc/make installed.
+2. `gem install jekyll bundler`
+3. From where you cloned this repo run: `bundle exec jekyll serve`
+4. In a browser go to http://localhost:4000
 
 ## Personal Profiles
 
