@@ -1,7 +1,7 @@
 ---
 layout: person
 title: Teodora Baluta
-slug: teodora
+slug: teo
 role: PhD Candidate
 email: teodora.baluta@u.nus.edu
 github_username: teobaluta
