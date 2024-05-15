@@ -1,6 +1,6 @@
 ---
 layout: person
-title: Wang, Bo
+title: Bo Wang
 slug: bo
 role: PhD Student
 github_username: HALOCORE
