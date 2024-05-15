@@ -7,6 +7,3 @@ homepage: https://zero0one1.github.io/
 ---
 
 
-Hi!
-
-
