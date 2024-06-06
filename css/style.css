@@ -1,3 +1,28 @@
+:root {
+  --global-bg-color: #ffffff;
+  --global-text-color: #000000;
+  --global-theme-color: #00369f;
+  --global-hover-color: #00369f;
+
+
+  --grey-divider-color: rgba(0,0,0,0.7);
+  .fa-sun {
+    display : none;
+  }
+  .fa-moon {
+    padding-left: 10px;
+    padding-top: 14px;
+    display : block;
+  }
+
+  .repo-img-light {
+    display: block;
+  }
+  .repo-img-dark {
+    display: none;
+  }
+}
+
 .proj-item {
   margin: 2em 0;
   line-height: 1em;
@@ -106,6 +131,7 @@
 
 .post-content {
   padding-top: 20px;
+  text-align: justify;
   clear: both;
 }
 
@@ -124,4 +150,72 @@
 .pub-info {
   font-size: 75%;
   margin-bottom: 0.75em;
+}
+
+.pub-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px; /* Adjust the gap between the text/buttons and the video */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc; /* Add a border at the bottom of the container */
+  padding-bottom: 20px; /* Add space between the content and the border */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between Abstract and Code buttons */
+  margin-top: 10px; /* Space between the pub-title and buttons */
+}
+
+.links .btn {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-left: 0;
+  text-decoration: none; /* Ensure the buttons look like buttons */
+}
+
+.links .btn:hover {
+  color: var(--global-hover-color);
+  border-color: var(--global-hover-color);
+}
+
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  display: none;
+  border: 1px solid transparent; /* Default transparent border */
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 10px; /* Add some space between the buttons and the text */
+}
+
+.boxed {
+  border: 1px dashed black; /* Visible border when boxed */
+  background-color: #f0f0f0;
+  text-align: justify;
+}
+
+.video {
+  display: none;
+  flex-shrink: 0;
+  width: 320px;
+  height: 240px;
+}
+
+.video-show {
+  display: block;
 }

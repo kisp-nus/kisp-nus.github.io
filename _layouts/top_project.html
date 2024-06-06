@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+{% assign people = site.people %}
+
+<article class="post">
+
+  <header class="post-header">
+    <div class="project-title">
+      <h1 class="post-title">{{ page.name | escape }}</h1>
+    </div>
+    <div class="project-image">
+        <img src="/images/projects/{{ page.slug }}.png" alt="Project {{page.slug}} logo"/>
+      </div>
+
+      <div class="proj-lead">
+        Project lead:
+        {%- assign a = page.lead -%}
+        {%- assign nocomma = true -%}
+        {%- include author.html -%}
+      </div>
+      <div class="proj-team">
+        Project team:
+        {%- assign authors = page.people -%}
+        {%- include author_list.html -%}
+      </div>
+  </header>
+
+  <div class="button-container">
+    {%- for category in page.display_categories %}
+      <div class="links">
+      <a class="toggleButton btn btn-sm z-depth-0" role="button">{{ category }}</a>
+      </div>
+    {%- endfor -%}
+    </div>
+
+  <div class="post-content">{{ content }}</div>
+  {%- for category in page.display_categories %}
+  <h2 class="category">{{ category }}</h2>
+    {%- assign categorized_pubs = site.pubs | where: "category", category -%}
+    {%- assign sorted_pubs = categorized_pubs | sort: "year" | reverse %}
+    <div class="container">
+      <div class="row row-cols-2">
+        {%- for project in sorted_pubs -%}
+        {% include projects_horizontal.html %}
+        {%- endfor %}
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</article>
+
+
+<script>
+  $(document).ready(function() {
+      $('.toggleButton').click(function() {
+          var container = $(this).closest('.pub-container');
+          var text = container.find('.text');
+          text.toggle();
+          text.toggleClass('boxed');
+      });
+
+      $('.videoButton').click(function() {
+          var container = $(this).closest('.pub-container');
+          var video = container.find('.video');
+          video.toggle();
+          video.toggleClass('video-show');
+      });
+  });
+</script>
