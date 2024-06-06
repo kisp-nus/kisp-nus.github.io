@@ -27,15 +27,15 @@ layout: default
       </div>
   </header>
 
+  <div class="post-content">{{ content }}</div>
   <div class="button-container">
     {%- for category in page.display_categories %}
       <div class="links">
       <a class="toggleButton btn btn-sm z-depth-0" role="button">{{ category }}</a>
       </div>
     {%- endfor -%}
-    </div>
+  </div>
 
-  <div class="post-content">{{ content }}</div>
   {%- for category in page.display_categories %}
   <h2 class="category">{{ category }}</h2>
     {%- assign categorized_pubs = site.pubs | where: "category", category -%}
