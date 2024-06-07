@@ -3,7 +3,11 @@ layout: top_project
 name: MAPS
 slug: maps
 description: Machine learning and Algorithms for Practical Security
-people: teo aashish kareem ivica
+people:
+  - slug: teo
+  - slug: aashish
+  - slug: kareem
+  - slug: ivica
 display_categories: [ML Privacy, ML Robustness, ML Applications]
 ---
 

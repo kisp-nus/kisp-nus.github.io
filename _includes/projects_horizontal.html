@@ -2,6 +2,10 @@
   <div class="toggle-container">
     <div class="links">
       <div class="pub-title">{{ project.title }}</div>
+      <div class="pub-authors">
+        {% assign authors = project.authors %}
+        {% include author_list.html %}
+      </div>
       <div class="pub-info">{{ project.publication }} {{project.year}}</div>
       <div class="button-container">
         <a class="toggleButton btn btn-sm z-depth-0" role="button">Abstract</a>
