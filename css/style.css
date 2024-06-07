@@ -1,9 +1,8 @@
 :root {
   --global-bg-color: #ffffff;
   --global-text-color: #000000;
-  --global-theme-color: #00369f;
-  --global-hover-color: #00369f;
-
+  --global-theme-color: #dd967a;
+  --global-hover-color: #aa4219;
 
   --grey-divider-color: rgba(0,0,0,0.7);
   .fa-sun {
@@ -21,6 +20,10 @@
   .repo-img-dark {
     display: none;
   }
+}
+
+.site-header {
+  background-color: var(--global-theme-color);
 }
 
 .proj-item {
