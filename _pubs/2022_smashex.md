@@ -6,8 +6,8 @@ authors:
  - name: Prateek Saxena
    url: https://www.comp.nus.edu.sg/~prateeks/
 
-publication: 
-year: 
+publication: CCS 
+year: 2021
 pub_url: 
 category: [TEEs]
 abstract: "Exceptions are a commodity hardware functionality which is central to multi-tasking OSes as well as event-driven user applications. Normally, the OS assists the user application by lifting the semantics of exceptions received from hardware to program-friendly user signals and exception handling interfaces. However, can exception handlers work securely in user enclaves, such as those enabled by Intel SGX, where the OS is not trusted by the enclave code?
