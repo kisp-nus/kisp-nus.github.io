@@ -26,6 +26,8 @@
 .proj-item {
   margin: 2em 0;
   line-height: 1em;
+  display: flex;
+  flex-direction: row;
 }
 
 .proj-teaser {
