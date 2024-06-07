@@ -28,16 +28,16 @@ layout: default
   </header>
 
   <div class="post-content">{{ content }}</div>
-  <div class="button-container">
+  <div class="header">
     {%- for category in page.display_categories %}
       <div class="links">
-      <a class="toggleButton btn btn-sm z-depth-0" role="button">{{ category }}</a>
+        <a class="categoryButton big-btn btn-sm z-depth-0" data-category="{{ category }}" role="button">{{ category }}</a>
       </div>
     {%- endfor -%}
   </div>
-
   {%- for category in page.display_categories %}
-  <h2 class="category">{{ category }}</h2>
+  <div class="category-section" data-category="{{ category }}">
+    <h2 class="category">{{ category }}</h2>
     {%- assign categorized_pubs = site.pubs | where: "category", category -%}
     {%- assign sorted_pubs = categorized_pubs | sort: "year" | reverse %}
     <div class="container">
@@ -47,8 +47,8 @@ layout: default
         {%- endfor %}
       </div>
     </div>
+    </div>
   {% endfor %}
-  </div>
 </article>
 
 
@@ -67,5 +67,16 @@ layout: default
           video.toggle();
           video.toggleClass('video-show');
       });
+      $('.categoryButton').click(function() {
+          var category = $(this).data('category');
+          var section = $('.category-section[data-category="' + category + '"]');
+
+          // Toggle the visibility of the selected category section
+          section.toggle();
+
+          // Hide all other category sections
+          $('.category-section').not(section).hide();
+      });
+
   });
 </script>

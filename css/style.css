@@ -185,10 +185,28 @@
   text-decoration: none; /* Ensure the buttons look like buttons */
 }
 
+.links .big-btn {
+  color: var(--global-text-color);
+  border: 2px solid var(--global-text-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-left: 0;
+  text-decoration: none; /* Ensure the buttons look like buttons */
+  background-color: #728ba7; /* Default background color */
+}
+
 .links .btn:hover {
   color: var(--global-hover-color);
   border-color: var(--global-hover-color);
 }
+
+.links .big-btn:hover {
+  color: var(--global-hover-color);
+  border-color: var(--global-hover-color);
+}
+
 
 .toggle-container {
   display: flex;
@@ -218,4 +236,17 @@
 
 .video-show {
   display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid #ccc; /* Add a border at the bottom of the container */
+  padding-bottom: 20px; /* Add space between the content and the border */
+}
+
+.category-section {
+  display: none;
 }
