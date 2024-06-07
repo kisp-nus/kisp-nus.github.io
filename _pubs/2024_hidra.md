@@ -1,7 +1,7 @@
 ---
 title: "Attacking Byzantine Robust Aggregation in High Dimensions"
 authors:
- - name: Sartak Choudhary
+ - name: Sarthak Choudhary
    url: 
  - slug: aashish
  - name: Prateek Saxena
