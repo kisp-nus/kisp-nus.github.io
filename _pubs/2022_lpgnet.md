@@ -1,8 +1,8 @@
 ---
 title: "LPGNet: Link Private Graph Networks for Node Classification"
 authors:
- - slug: teo
  - slug: aashish
+ - slug: teo
  - name: Prateek Saxena
    url: https://www.comp.nus.edu.sg/~prateeks/
 
