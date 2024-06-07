@@ -9,17 +9,12 @@ layout: default
   <header class="post-header">
     <div class="project-title">
       <h1 class="post-title">{{ page.name | escape }}</h1>
+      <h2> {{ page.description }} </h2>
     </div>
     <div class="project-image">
         <img src="/images/projects/{{ page.slug }}.png" alt="Project {{page.slug}} logo"/>
       </div>
 
-      <div class="proj-lead">
-        Project lead:
-        {%- assign a = page.lead -%}
-        {%- assign nocomma = true -%}
-        {%- include author.html -%}
-      </div>
       <div class="proj-team">
         Project team:
         {%- assign authors = page.people -%}
