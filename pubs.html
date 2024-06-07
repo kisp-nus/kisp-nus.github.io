@@ -15,7 +15,7 @@ permalink: /pubs/
         {% assign authors = pub.authors %}
         {% include author_list.html %}
       </div>
-      <div class="pub-info">{{ pub-container.publication }} {{pub.year}}</div>
+      <div class="pub-info">{{ pub.publication }} {{pub.year}}</div>
       <div class="button-container">
         <a class="toggleButton btn btn-sm z-depth-0" role="button">Abstract</a>
         <a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button">Code</a>
@@ -31,3 +31,22 @@ permalink: /pubs/
   {% endif %}
 </div>
 {% endfor %}
+
+
+<script>
+  $(document).ready(function() {
+      $('.toggleButton').click(function() {
+          var container = $(this).closest('.pub-container');
+          var text = container.find('.text');
+          text.toggle();
+          text.toggleClass('boxed');
+      });
+
+      $('.videoButton').click(function() {
+          var container = $(this).closest('.pub-container');
+          var video = container.find('.video');
+          video.toggle();
+          video.toggleClass('video-show');
+      });
+  });
+</script>
