@@ -1,6 +1,6 @@
 ---
 layout: person
-title: Yu, Jason Zhijingcheng
+title: Jason Yu
 slug: jason
 role: PhD Student
 email: yu.zhi@comp.nus.edu.sg
@@ -9,7 +9,7 @@ homepage: https://www.comp.nus.edu.sg/~yuz1996/
 ---
 
 Hi, I'm Jason! I'm a PhD student at KISP.
-I am interested in designing and building 
+I am interested in designing and building
 systems
 with next-generation memory safety and isolation
 features.
