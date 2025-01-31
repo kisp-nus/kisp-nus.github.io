@@ -26,6 +26,14 @@ permalink: /projects/
     <div class="proj-description">
         {{ proj.description }}
     </div>
+    <div class="proj-problems">
+      <p>Atomic Problems: 
+        {% for problem in proj.atomic_problems -%}
+          {%- if forloop.first %}{{ problem }}
+          {%- else %}, {{ problem }}{%- endif %}
+        {%- endfor -%}
+      </p>
+    </div>
   </div>
 </div>
 {% endfor %}
