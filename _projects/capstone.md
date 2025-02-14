@@ -5,7 +5,7 @@ slug: capstone
 description: Capability-based Foundations for Trustless Secure Memory Access
 people:
   - slug: jason
-display_categories: [TEEs, Memory Safety, OS Security]
+display_categories: [Computer Architecture, TEEs, Memory Safety, OS Security]
 ---
 
 The traditional hardware-based approach to security problems such as memory safety and
@@ -53,4 +53,5 @@ maintaining the advantages of capabilities.
 1. **Efficient implementation of capability-based architectures:**
 We also explore the techniques to efficiently implement such next-generation architectures in hardware.
 
-For more information, please visit the dedicate [CAPSTONE website](https://capstone.kisp-lab.org/).
+For more information, please visit [CAPSTONE's project website](https://capstone.kisp-lab.org/).
+
