@@ -1,5 +1,10 @@
 # NUS KISP Lab
 
+NOTE: This is a one-page version of the KISP Lab website.
+See [./readme-onepage.md](./readme-onepage.md) for details.
+
+-------
+
 The website for the NUS KISP Lab is built using
 [Jekyll](https://jekyllrb.com/docs/) and at the time of writing
 hosted on [GitHub pages](https://pages.github.com/).
