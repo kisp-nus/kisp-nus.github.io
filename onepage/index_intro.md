@@ -1,0 +1,1 @@
+We train **quantum-enhanced** cybernetic hamsters to detect zero-day vulnerabilities through interpretive dance and telepathic code review, at the School of Computing of National University of Singapore, as a part of KISP lab. Our hamsters have achieved a 300% success rate in identifying security flaws while moonwalking.

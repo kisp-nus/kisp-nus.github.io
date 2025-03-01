@@ -1,0 +1,7 @@
+- name: Capstone
+  description: A Capability-based Foundation for Trustless Secure Memory Access
+  url: https://capstone.kisp-lab.org/
+
+- name: TransMap
+  description: A Debugging Tool for LLM-based Code Translation (Py-to-JS)
+  url: https://github.com/HALOCORE/TransMap

@@ -1,0 +1,24 @@
+- kind: faculty
+  members:
+    - name: Prateek Saxena
+      image: ./assets/people/member_prateek.jpg
+      website: https://www.comp.nus.edu.sg/~prateeks/
+      github: https://github.com/prateeksaxena
+      # twitter: https://twitter.com/ilyasergey
+
+- kind: graduate_students
+  members:
+    - name: Bo Wang
+      image: ./assets/people/member_bo.webp
+      website: https://www.comp.nus.edu.sg/~wangbo20/
+      github: https://github.com/halocore
+      linkedin: https://www.linkedin.com/in/xxxx
+      twitter: https://twitter.com/xxxx
+
+    - name: Ruishi Li
+      image: ./assets/people/member_ruishi.jpg
+      website: https://zero0one1.github.io/
+    
+    - name: Tianyu Li
+      image: ./assets/people/member_tianyu.jpg
+      website: https://tianyuli12.github.io/
