@@ -1,9 +1,0 @@
-{% if a.slug %}
-  {% assign p = people | where: "slug", a.slug | first %}
-  <a href="{{ p.url }}">{{ p.title }}</a>{% unless nocomma %},{% endunless %}
-{% else %}
-  {% if a.url %}<a href="{{a.url}}">{% endif -%}
-  {{ a.name -}}
-  {% if a.url %}</a>{% endif -%}
-  {% unless nocomma %},{% endunless %}
-{% endif %}
