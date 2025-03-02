@@ -1,45 +1,28 @@
 Our research directions are summarized in the following themes.
 
-For more information about our work, please visit our [projects](/#projects), and [recent publications](#publications).
+For more information about our work, please visit our [projects](#projects), and [recent publications](#publications).
 
-### Theme 1: Blah Blah Systems
+### Theme 1: Capstone
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-ad minim veniam, quis nostrud [exercitation ullamco](#)
-laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. We have also developed [some fancy
-stuff](#) and [other things](#) that do amazing things.
-Finally, we created [groundbreaking innovations](#) in
-this field.
+The traditional hardware-based approach to security problems such as memory safety and
+memory isolation has been individual _ad hoc_ architectural extensions.
+This has created a fragmented landscape: the protection mechanisms are not universally available,
+and the interactions between different extensions are unclear or confusing.
+In part, this problem is due to the traditional virtual-memory-based access control model,
+which imposes a rigid central and hierarchical trust model and coarse protection granularity.
 
-Our ultimate goal is to revolutionize how people think about
-computing by creating tools that may or may not work but sound
-really impressive in grant proposals.
+The **CAPSTONE** project aims to design a computer architecture expressive enough to
+cover multiple security goals with a single clean set of primitives.
+We take an approach based on _capability-based security_, where the hardware
+enforces security policies that are not controlled by a central trusted authority, but
+collectively defined by different software components.
 
-### Theme 2: Making Computers Do Things
+### Theme 2: Automatic Program Translation
 
-We make computers do things automatically so humans don't have to.
-Sometimes it works, sometimes it doesn't. Our recent breakthroughs
-include making [fancy tool 1](#) and [fancy
-tool 2](#) which supposedly do something useful. We've also created
-[another tool](#) that might change the world, or at
-least that's what we claimed in the paper.
+"Translating C to Rust: Lessons from a User Study" ([paper](https://arxiv.org/abs/2411.14174)).
 
-Our long-term vision involves creating skynet, but we tell funding
-agencies we're working on beneficial AI tools.
+### Theme 3: Machine learning and Algorithms for Practical Security
 
-### Theme 3: Complex Stuff That Sounds Important
+Machine learning tools have become widely accessible over the past decade, but their security remains an ongoing challenge. OWASP has summarized the [‘Top 10’ practical problems in machine learning (ML) security](https://owasp.org/www-project-machine-learning-security-top-10/). However, research in each sub-problem is an ongoing race between attacks and defenses. Does this cat-and-mouse race have an end? Are there optimal defense strategies such that all attacks bounded by certain costs become impractical? 
 
-This research area has been around since the dinosaurs roamed the
-Earth, but we're still finding new ways to make it complicated. We've
-developed [theoretical frameworks](#) that nobody
-understands and [practical tools](#) that sometimes work.
-Our contributions include [impressive-sounding tool](#)
-and [another breakthrough](#) that we're pretty sure does
-something useful. We've also applied our expertise to make
-[existing systems](#) slightly less terrible.
-
-Our mission is to make this field so complex that only we can
-understand it, ensuring job security for generations to come.
+The **MAPS** project aims to answer these questions in a principled manner by identifying the inherent limitations of current schemes and drawing from cryptographically hard problems to establish robust security guarantees. Specifically, we study four main areas: 1) the practical impact of data poisoning attacks in federated settings and the computational limitations of robust aggregation defenses against such attacks; 2) watermarking schemes for AI-generated content that is provably secure against all possible attacks; 3) defenses against model inversion attacks, including a cryptographic primitive that prevents the recovery of sensitive inputs; 4) we investigate verification of desired properties of ML systems and practical differential privacy in federated networks and GNNs. 
