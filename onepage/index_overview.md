@@ -17,9 +17,17 @@ We take an approach based on _capability-based security_, where the hardware
 enforces security policies that are not controlled by a central trusted authority, but
 collectively defined by different software components.
 
-### Theme 2: Automatic Program Translation
+### Theme 2: Automated Program Translation (AutoCodeTrans)
 
-"Translating C to Rust: Lessons from a User Study" ([paper](https://arxiv.org/abs/2411.14174)).
+Translating programs between different programming languages is essential for various reasons, such as achieving memory safety, adapting to new ecosystems, and migrating legacy code. Our project AutoCodeTrans aims to automate this process while ensuring three key qualities:
+
+(a) **Correctness**: The translated code should maintain the same or equivalent functionality. \\
+(b) **Scalability**: The translator should handle large, real-world codebases effectively. \\
+(c) **Maintainability**: The output should be easy to read, modify, and maintain. 
+
+Achieving these goals is challenging due to differences in syntax, type systems, external APIs, and language-specific constructs. Our long-term mission is to overcome these challenges and develop automated translation techniques that work effectively for real-world programs.
+
+We are interested in both general-purpose code translation and domain-specific translators, such as converting C to Rust for better memory safety or Python to JavaScript. Our research spans rule-based translation and LLM-based translation. For more information, please visit [AutoCodeTrans's project website](https://kisp.comp.nus.edu.sg/projects/apt).
 
 ### Theme 3: Machine learning and Algorithms for Practical Security
 
