@@ -14,7 +14,7 @@ publication: CCS
 year: 2023
 pub_url: https://dl.acm.org/doi/10.1145/3576915.3623093
 github: "https://github.com/teobaluta/unforgeability-SGD"
-category: [ML Privacy]
+category: Others
 abstract: "Stochastic Gradient Descent (SGD) is a popular training algorithm, a cornerstone of modern machine learning systems. Several security applications benefit from determining if SGD executions are
 forgeable, i.e., whether the model parameters seen at a given step
 are obtainable by more than one distinct set of data samples. In

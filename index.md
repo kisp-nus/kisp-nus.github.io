@@ -11,7 +11,9 @@ people:
 atomic_problems:
   - ML Privacy
   - ML Robustness
-  - ML Applications
+  - ML Inversion
+  - Watermark
+  - Others
 ---
 
 Machine learning tools have become widely accessible over the past decade, but their security remains an ongoing
