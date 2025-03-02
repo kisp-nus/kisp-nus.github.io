@@ -1,0 +1,11 @@
+- name: Capstone
+  description: A Capability-based Foundation for Trustless Secure Memory Access
+  url: https://capstone.kisp-lab.org/
+
+- name: APT
+  description: Automated Program Translation
+  url: https://kisp.comp.nus.edu.sg/projects/apt
+
+- name: MAPS
+  description: Machine Learning and Algorithms for Practical Security
+  # url: https://kisp.comp.nus.edu.sg/projects/maps

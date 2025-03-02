@@ -1,0 +1,2 @@
+We do research in the security of the security and privacy of computers and communications. Our research spans the following themes: ML Security, Decentralized Systems Security, Security Processors, and Automatic Program Translation.
+Our moto is “**K**eep **I**t **S**ecure and **P**rivate” or KISP for short.
