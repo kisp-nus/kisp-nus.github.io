@@ -1,3 +1,7 @@
+- date: "Mar 01"
+  content : "AnvilHDL [(Read More)](https://capstone.kisp-lab.org) released for public use: [Artefact](https://github.com/jasonyu1996/anvil)" 
+- date: "Jan 16"
+  content : "Caplifive released for public use: [Read More](https://capstone.kisp-lab.org/2025-01-16-caplifive-release/)" 
 - date: "Nov 01"
   content: "Our paper on a [user study about translating C to Rust](https://arxiv.org/abs/2411.14174) is accepted at NDSS'25."
 
