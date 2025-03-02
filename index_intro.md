@@ -1,2 +1,2 @@
-We do research in the domain of the security and privacy of computers and communications. Our research spans the following themes: ML Security, Decentralized Systems Security, Security Processors, and Automatic Program Translation.
+We do research in the domain of the security and privacy of computers and communications at the [National University of Singapore](https://www.nus.edu.sg/) ([School of Computing](https://www.comp.nus.edu.sg/)). Our research spans the following themes: ML Security, Decentralized Systems Security, Security Processors, and Automatic Program Translation.
 Our moto is “**K**eep **I**t **S**ecure and **P**rivate” or KISP for short.
