@@ -1,1 +1,1 @@
-We train **quantum-enhanced** cybernetic hamsters to detect zero-day vulnerabilities through interpretive dance and telepathic code review, at the School of Computing of National University of Singapore, as a part of KISP lab. Our hamsters have achieved a 300% success rate in identifying security flaws while moonwalking.
+We do research in the security of the security and privacy of computers and communications. Our moto is “**K**eep **I**t **S**ecure and **P**rivate” or KISP for short.
