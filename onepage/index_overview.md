@@ -11,7 +11,7 @@ and the interactions between different extensions are unclear or confusing.
 In part, this problem is due to the traditional virtual-memory-based access control model,
 which imposes a rigid central and hierarchical trust model and coarse protection granularity.
 
-The **CAPSTONE** project aims to design a computer architecture expressive enough to
+The [**CAPSTONE**](https://capstone.kisp-lab.org) project aims to design a computer architecture expressive enough to
 cover multiple security goals with a single clean set of primitives.
 We take an approach based on _capability-based security_, where the hardware
 enforces security policies that are not controlled by a central trusted authority, but
