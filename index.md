@@ -8,11 +8,13 @@ people:
   - slug: aashish
   - slug: kareem
   - slug: ivica
+  - slug: louise
+  - slug: mallika
 atomic_problems:
-  - ML Privacy
   - ML Robustness
-  - ML Inversion
   - Watermark
+  - ML Inversion
+  - ML Privacy
   - Others
 ---
 

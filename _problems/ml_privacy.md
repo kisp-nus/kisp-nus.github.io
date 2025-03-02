@@ -5,4 +5,9 @@ problem_statement:
 contribution: 
 ---
 
-<!-- Learning in federated setups enables more control over their data for users. Despite this advantage, it is difficult to ensure that the privacy of users is preserved with strong guarantees while learning something useful from the users' data. In this line of works, we focus on the question if there exist algorithms that show a good trade-off between utility and privacy. We show several key technical contributions that build on top of the principled framework of **differential privacy** to answer positively. -->
+There are more examples of principled approaches to analyzing machine learning
+security in our work. We applied quantitative verification for fairness and adversarial robustness for
+neural networks [5, 6]. We have analyzed when membership inference tests are conclusive. Our work
+shows the importance of causal reasoning here, as opposed to drawing conclusions purely with observations of statistical correlation [7]. We have worked on making differential privacy more practical for
+fully-distributed graph processing, e.g. for hierarchical clustering [8] and training GNNs [9]. Lastly, we
+are studying data repudiation, i.e., convincing a verifier that a data point was not used in training [10].
