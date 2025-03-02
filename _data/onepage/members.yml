@@ -5,14 +5,34 @@
       website: https://www.comp.nus.edu.sg/~prateeks/
       github: https://github.com/prateeksaxena
 
+- kind: senior_research_fellows
+  members:
+    - name: Ivica Nikolić
+      image: ./assets/people/member_ivica.jpeg
+      website: https://sites.google.com/view/ivica-nikolic-sg/home
+
 - kind: graduate_students
   members:
+    - name: Jason Yu
+      image: ./assets/people/member_jason.jpeg
+      website: https://www.comp.nus.edu.sg/~yuz1996/
+      # github: https://github.com/jasonyu20
+      # linkedin: https://www.linkedin.com/in/xxxx
+      # twitter: https://twitter.com/xxxx
+
     - name: Bo Wang
       image: ./assets/people/member_bo.webp
       website: https://www.comp.nus.edu.sg/~wangbo20/
       github: https://github.com/halocore
       linkedin: https://www.linkedin.com/in/xxxx
       twitter: https://twitter.com/xxxx
+
+    - name: Kareem Shehata
+      image: ./assets/people/member_kareem.jpeg
+      website: https://kareem.shehata.ca/
+      # github: https://github.com/jasonyu20
+      # linkedin: https://www.linkedin.com/in/xxxx
+      # twitter: https://twitter.com/xxxx
 
     - name: Ruishi Li
       image: ./assets/people/member_ruishi.jpg
@@ -35,3 +55,40 @@
       github: https://github.com/adi4comp
       linkedin: https://www.linkedin.com/in/adi4comp/
       twitter: https://twitter.com/adi4comp
+
+    - name: Mallika Prabhakar
+      image: ./assets/people/member_mallika.png
+
+# - kind: alumni
+#   members:
+#     - name: Teodora Baluta
+#       image: ./assets/people/member_teo.jpeg
+#       website: https://teobaluta.github.io/
+
+#     - name: Shweta Shinde
+#       website: https://n.ethz.ch/~sshivaji/
+
+#     - name: Shruti Tople
+#       website: https://www.microsoft.com/en-us/research/people/shtople/
+
+#     - name: Shiqi Shen
+#       website: https://scholar.google.com/citations?user=Or0vNlYAAAAJ&hl=en
+
+#     - name: Loi Luu
+#       website: https://loiluu.com/
+
+#     - name: Amrit Kumar
+#       website: https://scholar.google.ca/citations?user=oQK9EDUAAAAJ&hl=en
+
+#     - name: Jason Teutsch
+#       website: https://people.cs.uchicago.edu/~teutsch/
+
+#     - name: Virgil Griffith
+#       website: http://virgil.gr/
+
+#     - name: Hoon Wei Lim
+#       website: https://scholar.google.com.sg/citations?user=LpG-DGYAAAAJ&hl=en
+
+#     - name: Enrico Budianto
+#       website: http://www.comp.nus.edu.sg/~enricob/
+
