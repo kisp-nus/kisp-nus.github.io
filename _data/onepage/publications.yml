@@ -8,16 +8,64 @@
     - {type: "PDF", url: "https://arxiv.org/abs/2411.14174"}
   recent: true
 
-- title: "Teaching Blockchain to Cats: A Revolutionary Approach to Smart Contract Security"
-  authors: ["Dr. Whiskers", "Prof. Meow Master", "Chief Purr Officer"]
-  venue: "Feline Information Security Conference"
-  shortVenue: "PURR 2025"
-  location: "Catopia, Mars Colony"
-  date: "September 2025"
+- title: "Attacking Byzantine Robust Aggregation in High Dimensions"
+  authors: ["Sarthak Choudhary*", "Aashish Kolluri*" , "Prateek Saxena"]
+  venue: "IEEE Symposium on Security and Privacy"
+  shortVenue: "S&P OAKLAND 2024"
+  location: "Oakland, CA"
+  date: "May 2024"
   links:
-    - {type: "PDF", url: "/papers/blockchain-cats.pdf"}
-    - {type: "Artefact", url: "https://doi.org/10.5281/zenodo.meow9lives"}
-    - {type: "Video Demo", url: "https://youtube.com/watch?v=quackquack"}
+    - {type: "PDF", url: "https://ieeexplore.ieee.org/document/10646844"}
+    - {type: "Artefact", url: "https://github.com/sarthak-choudhary/HIDRA"}
   recent: true
+
+- title: "Unforgeability in Stochastic Gradient Descent"
+  authors: ["Teodora Baluta", "Ivica Nikolic", "Racchit Jain", "Divesh Aggarwal", "Prateek Saxena"]
+  venue: "ACM Conference on Computer and Communications Security"
+  shortVenue: "CCS 2023"
+  location: "Copenhagen, DK"
+  date: "Nov 2023"
+  links:
+    - {type: "PDF", url: "https://dl.acm.org/doi/10.1145/3576915.3623093"}
+    - {type: "Artefact", url: "https://github.com/teobaluta/unforgeability-SGD"}
+  recent: true
+
+- title: "TransMap: Pinpointing Mistakes in Neural Code Translation"
+  authors: ["Bo Wang", "Ruishi Li", "Mingkai Li","Prateek Saxena"]
+  venue: "Foundations of Software Engineering"
+  shortVenue: "ESEC/FSE 2023"
+  location: "San Francisco, CA"
+  date: "Dec 2024"
+  links:
+    - {type: "PDF", url: "https://dl.acm.org/doi/pdf/10.1145/3611643.3616322"}
+    - {type: "Artefact", url: "https://github.com/HALOCORE/TransMap"}
+  recent: true
+
+
+
+- title: "Capstone: A Capability-based Foundation for Trustless Secure Memory Access"
+  authors: ["Jason Zhijingcheng Yu", "Conrad Watt", "Aditya Badole", "Trevor Carlson", "Prateek Saxena"]
+  venue: "Usenix Security Symposium"
+  shortVenue: "Usenix Security 2023"
+  location: "Anaheim , CA"
+  date: "Aug 2023"
+  links:
+    - {type: "PDF", url: "https://www.usenix.org/system/files/usenixsecurity23-yu-jason.pdf"}
+    - {type: "Artefact", url: "https://github.com/jasonyu1996/capstone"}
+
+  recent: true
+
+- title: "User-customizable Transpilation for Scripting Languages"
+  authors: ["Bo Wang", "Aashish Kolluri", "Ivica Nikolic", "Teodora Baluta", "Prateek Saxena"]
+  venue: "ACM SIGPLAN Conference on Object-Oriented Programming Systems, Languages, and Applications"
+  shortVenue: "OOPSLA 2023"
+  location: "Cascais, PT"
+  date: "Oct 2023"
+  links:
+    - {type: "PDF", url: "https://dl.acm.org/doi/10.1145/3586034"}
+    - {type: "Artefact", url: "https://github.com/HALOCORE/DuoGlot"}
+
+  recent: true
+
 
 # Add remaining publications with similar structure... 
