@@ -28,9 +28,6 @@ url: "https://kisp-nus.github.io" # the base hostname & protocol for your site, 
 # github_username:  jekyll
 
 collections:
-  projects:
-    output: True
-    permalink: /:collection/:name
   people:
     output: True
     permalink: /:collection/:name

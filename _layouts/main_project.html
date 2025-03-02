@@ -40,6 +40,29 @@ layout: default
     </div>
   </div>
 
+  <!-- List of all publications -->
+  <!-- <div class="atomic-papers">
+    {%- assign categorized_pubs = site.pubs -%}
+    {%- assign sorted_pubs = categorized_pubs | sort: "year" | reverse %}
+    {% if sorted_pubs.size > 0 %}
+    <h3> All Publications </h3>
+    <a class="toggleButton btn btn-sm z-depth-0" role="button">
+      Click here to expand</a>
+    <div class="related-papers-container" style="display: none;">
+      <div class="container">
+        <div class="row row-cols-2">
+          {%- for project in sorted_pubs -%}
+          {% include projects_horizontal.html %}
+          {%- endfor %}
+        </div>
+      </div>
+    </div>
+    {% else %}
+    <p>No papers listed.</p>
+    {% endif %}
+  </div> -->
+
+
 </article>
 
 
