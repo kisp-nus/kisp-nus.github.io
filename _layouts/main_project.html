@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+{% assign people = site.people %}
+
+<article class="post">
+
+  <header class="post-header">
+    <div class="project-title">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <h2> {{ page.description }} </h2>
+    </div>
+    <div class="project-image">
+      <img src="/images/projects/{{ page.slug }}_small.png" alt="Project {{page.slug}} logo" />
+    </div>
+
+    <div class="proj-team">
+      Project team:
+      {%- assign authors = page.people -%}
+      {%- include author_list.html -%}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <!-- List of Atomic Problems -->
+  <div class="proj-atomic-problems">
+    <h3>Themes</h3>
+    <div class="problem-list">
+      {% for problem in page.atomic_problems %}
+      {%- assign prob = site.problems | where: "title", problem | first -%}
+      <div class="problem-card">
+        {% include atomic_problem.html %}
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+</article>
+
+
+<script>
+  $(document).ready(function () {
+    $('.toggleButton').click(function () {
+      var container = $(this).next('.related-papers-container');
+      container.toggle();
+    });
+
+    $('.videoButton').click(function () {
+      var container = $(this).closest('.pub-container');
+      var video = container.find('.video');
+      video.toggle();
+      video.toggleClass('video-show');
+    });
+
+  });
+</script>

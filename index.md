@@ -1,9 +1,37 @@
 ---
-layout: page
+layout: main_project
+title: MAPS
+slug: maps
+description: Machine learning and Algorithms for Practical Security
+people:
+  - slug: teo
+  - slug: aashish
+  - slug: kareem
+  - slug: ivica
+atomic_problems:
+  - ML Privacy
+  - ML Robustness
+  - ML Applications
 ---
 
-## What is KISP?
+Machine learning tools have become widely accessible over the past decade, but their security remains an ongoing
+challenge. OWASP has summarized the [‘Top 10’ practical problems in machine learning (ML)
+security](https://owasp.org/www-project-machine-learning-security-top-10/). However, research in each sub-problem is
+an
+ongoing race between attacks and defenses. Does this cat-and-mouse race have an end? Are there optimal defense
+strategies such that all attacks bounded by certain costs become impractical?
 
-Our moto is "**K**eep **I**t **S**ecure and **P**rivate" or KISP for short. We aim to
-make the world a better place by improving the security and privacy
-of computers and communications.
+The **MAPS** project aims to answer these questions in a principled manner by identifying the inherent limitations
+of
+current schemes and drawing from cryptographically hard problems to establish robust security guarantees.
+Specifically,
+we study four main areas: 1) the practical impact of data poisoning attacks in federated settings and the
+computational
+limitations of robust aggregation defenses against such attacks; 2) watermarking schemes for AI-generated content
+that
+is provably secure against all possible attacks; 3) defenses against model inversion attacks, including a
+cryptographic
+primitive that prevents the recovery of sensitive inputs; 4) we investigate verification of desired properties of ML
+systems and practical differential privacy in federated networks and GNNs.
+
+---
