@@ -4,7 +4,6 @@
       image: ./assets/people/member_prateek.jpg
       website: https://www.comp.nus.edu.sg/~prateeks/
       github: https://github.com/prateeksaxena
-      # twitter: https://twitter.com/ilyasergey
 
 - kind: graduate_students
   members:
@@ -18,6 +17,8 @@
     - name: Ruishi Li
       image: ./assets/people/member_ruishi.jpg
       website: https://zero0one1.github.io/
+      github: https://github.com/Zero0one1
+      linkedin: https://www.linkedin.com/in/ruishili/
     
     - name: Tianyu Li
       image: ./assets/people/member_tianyu.jpg

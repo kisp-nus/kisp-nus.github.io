@@ -1,13 +1,11 @@
-- title: "Quantum Entanglement of Rubber Ducks for Enhanced Debugging Capabilities"
-  authors: ["Dr. Duck McQuackington", "Prof. Debugger Supreme"]
-  venue: "International Conference on Improbable Computing and Rubber Duck Debugging"
-  shortVenue: "ICRD 2025"
-  location: "Duckland, Virtual Reality"
-  date: "April 2024"
+- title: "Translating C To Rust: Lessons from a User Study"
+  authors: ["Ruishi Li*", "Bo Wang*", "Tianyu Li", "Prateek Saxena", "Ashish Kundu"]
+  venue: "NDSS Symposium 2025"
+  shortVenue: "NDSS 2025"
+  location: "San Diego, CA"
+  date: "February 2025"
   links:
-    - {type: "PDF", url: "/papers/quantum-ducks.pdf"}
-    - {type: "Artefact", url: "https://zenodo.org/records/duck42"}
-    - {type: "Video Demo", url: "https://youtube.com/watch?v=quackquack"}
+    - {type: "PDF", url: "https://arxiv.org/abs/2411.14174"}
   recent: true
 
 - title: "Teaching Blockchain to Cats: A Revolutionary Approach to Smart Contract Security"
@@ -19,6 +17,7 @@
   links:
     - {type: "PDF", url: "/papers/blockchain-cats.pdf"}
     - {type: "Artefact", url: "https://doi.org/10.5281/zenodo.meow9lives"}
+    - {type: "Video Demo", url: "https://youtube.com/watch?v=quackquack"}
   recent: true
 
 # Add remaining publications with similar structure... 

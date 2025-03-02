@@ -313,22 +313,22 @@ a:hover {
 
 .bg-indigo-900 {
   --tw-bg-opacity:1;
-  background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+  background-color: rgba(3, 94, 9, var(--tw-bg-opacity));
 }
 
 .hover\:bg-indigo-800:hover {
   --tw-bg-opacity:1;
-  background-color: rgba(55, 48, 163, var(--tw-bg-opacity));
+  background-color: rgba(5, 135, 14, var(--tw-bg-opacity));
 }
 
 .hover\:bg-indigo-900:hover {
   --tw-bg-opacity:1;
-  background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+  background-color: rgba(3, 94, 9, var(--tw-bg-opacity));
 }
 
-.bg-hero-pattern {
+/* .bg-hero-pattern {
   background-image: url(/assets/topography.svg);
-}
+} */
 
 .border-gray-600 {
   --tw-border-opacity:1;
@@ -337,7 +337,7 @@ a:hover {
 
 .border-indigo-900 {
   --tw-border-opacity:1;
-  border-color: rgba(49, 46, 129, var(--tw-border-opacity));
+  border-color: rgba(3, 94, 9, var(--tw-border-opacity));
 }
 
 .rounded-sm {
@@ -793,7 +793,7 @@ a:hover {
 
 .text-indigo-900 {
   --tw-text-opacity:1;
-  color: rgba(49, 46, 129, var(--tw-text-opacity));
+  color: rgba(3, 94, 9, var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
