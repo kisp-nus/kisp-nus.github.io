@@ -3,7 +3,7 @@
     <section>
         {% for pub in site.data.publications %}
         {% if pub.tag == page.tag %}
-        {% include publications-list.html %}
+        {% include publications.html %}
         {% endif %}
         {% endfor %}
         <div class="text-center py-6">
