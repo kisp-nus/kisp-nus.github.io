@@ -5,6 +5,8 @@ weight: 1
 description: 
 problem_statement: "Give theoretical guarantees for ML robustness"
 contribution: "We designed a HiDra attack to show current robust aggregators are impractical."
+tag: "poisoning"
+after-content: publications-rel.html
 ---
 
 Data poisoning is an integrity attack on ML model training, wherein data certain corrupted samples force the trained model to surreptitiously contain backdoors,

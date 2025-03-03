@@ -2,6 +2,8 @@
 layout: page
 title: "Robust Verification and privacy"
 weight: 4
+tag: "privacy"
+after-content: publications-rel.html
 ---
 
 There are more examples of principled approaches to analyzing machine learning

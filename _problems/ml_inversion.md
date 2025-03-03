@@ -2,6 +2,7 @@
 layout: page
 title: "Defeating Model Inversion"
 weight: 3
+tag: "model inversion"
 after-content: publications-rel.html
 ---
 
