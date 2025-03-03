@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Capstone | NUS KISP Lab</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Capstone" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Capability-based Foundations for Trustless Secure Memory Access" />
+<meta property="og:description" content="Capability-based Foundations for Trustless Secure Memory Access" />
+<link rel="canonical" href="http://localhost:4000/projects/capstone" />
+<meta property="og:url" content="http://localhost:4000/projects/capstone" />
+<meta property="og:site_name" content="NUS KISP Lab" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-02T23:23:40+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Capstone" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-02T23:23:40+08:00","datePublished":"2025-03-02T23:23:40+08:00","description":"Capability-based Foundations for Trustless Secure Memory Access","headline":"Capstone","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/capstone"},"url":"http://localhost:4000/projects/capstone"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="NUS KISP Lab" /><link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">NUS KISP Lab</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/people/">People</a><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/pubs/">Publications</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+<article class="post">
+
+  <header class="post-header">
+    <div class="project-title">
+      <h1 class="post-title">CAPSTONE</h1>
+      <h2> Capability-based Foundations for Trustless Secure Memory Access </h2>
+    </div>
+    <div class="project-image">
+        <img src="/images/projects/capstone_small.png" alt="Project capstone logo"/>
+      </div>
+
+      <div class="proj-team">
+        Project team:
+  
+  <a href="/people/jason">Jason Yu</a>
+
+</div>
+  </header>
+
+  <div class="post-content"><p>The traditional hardware-based approach to security problems such as memory safety and
+memory isolation has been individual <em>ad hoc</em> architectural extensions.
+This has created a fragmented landscape: the protection mechanisms are not universally available,
+and the interactions between different extensions are unclear or confusing.
+In part, this problem is due to the traditional virtual-memory-based access control model,
+which imposes a rigid central and hierarchical trust model and coarse protection granularity.</p>
+
+<p>The <strong>CAPSTONE</strong> project aims to design a computer architecture expressive enough to
+cover multiple security goals with a single clean set of primitives.
+We take an approach based on <em>capability-based security</em>, where the hardware
+enforces security policies that are not controlled by a central trusted authority, but
+collectively defined by different software components.</p>
+
+<p>Topics that this project explores include:</p>
+
+<ol>
+  <li>
+    <p><strong>Isolation with zero software TCB (Trusted Computing Base):</strong>
+In general, compared with hardware, software is complex, buggy and easy to compromise.
+The recent surge in public interests in trusted execution environments (TEEs)
+and confidential computing has recognised this issue, and reducing the software TCB
+has been a pressing need in various contexts ranging from cloud services to edge devices.
+Prior work has attempted to extend existing virtual-memory-based architectures for such
+a goal.
+In CAPSTONE, we seek to provide a more principled capability-based approach.</p>
+  </li>
+  <li>
+    <p><strong>Unifying memory isolation and memory safety:</strong>
+Memory isolation and memory safety have traditionally been treated separately and
+supported using disjoint sets of mechanisms.
+Capabilities, which bind access permissions to resource references, provide a basis for unifying those two goals.
+We seek to answer the question of how isolation semantics maps to program semantics
+so both can be supported with a single mechanism, despite the apparently different threat models in the two
+use cases.
+In particular, we are interested in enforcing temporal memory safety and higher-level safety properties
+(e.g., data race prevention) with capabilities.</p>
+  </li>
+  <li>
+    <p><strong>Bridging capabilities and traditional virtual-memory-based systems:</strong>
+Capability-based systems are very different from the ubiquitous virtual-memory-based systems,
+and a naive design either compromises the strengths of capabilities, or requires
+extensive changes in software.
+We aim to design a capability-based system that interoperates well with existing software stacks while
+maintaining the advantages of capabilities.</p>
+  </li>
+  <li>
+    <p><strong>Efficient implementation of capability-based architectures:</strong>
+We also explore the techniques to efficiently implement such next-generation architectures in hardware.</p>
+  </li>
+</ol>
+
+<p>For more information, please visit <a href="https://capstone.kisp-lab.org/">CAPSTONE’s project website</a>.</p>
+
+</div>
+  <div class="header">
+      <div class="links">
+        <a class="categoryButton big-btn btn-sm z-depth-0" data-category="Computer Architecture" role="button">Computer Architecture</a>
+      </div>
+      <div class="links">
+        <a class="categoryButton big-btn btn-sm z-depth-0" data-category="TEEs" role="button">TEEs</a>
+      </div>
+      <div class="links">
+        <a class="categoryButton big-btn btn-sm z-depth-0" data-category="Memory Safety" role="button">Memory Safety</a>
+      </div>
+      <div class="links">
+        <a class="categoryButton big-btn btn-sm z-depth-0" data-category="OS Security" role="button">OS Security</a>
+      </div></div>
+  <div class="category-section" data-category="Computer Architecture">
+    <h2 class="category">Computer Architecture</h2>
+    <div class="container">
+      <div class="row row-cols-2">
+      </div>
+    </div>
+    </div>
+  
+  <div class="category-section" data-category="TEEs">
+    <h2 class="category">TEEs</h2>
+    <div class="container">
+      <div class="row row-cols-2"><div class="pub-container">
+  <div class="toggle-container">
+    <div class="links">
+      <div class="pub-title">Elasticlave: An Efficient Memory Model for Enclaves</div>
+      <div class="pub-authors">
+        
+        
+  
+  <a href="/people/jason">Jason Yu</a>,
+
+
+  <a href="https://n.ethz.ch/~sshivaji/">Shweta Shinde</a>,
+
+
+  <a href="https://www.comp.nus.edu.sg/~tcarlson/">Trevor E. Carlson</a>,
+
+
+  <a href="https://www.comp.nus.edu.sg/~prateeks/">Prateek Saxena</a>
+
+
+      </div>
+      <div class="pub-info">USENIX Security 2022</div>
+      <div class="button-container">
+        <a class="toggleButton btn btn-sm z-depth-0" role="button">Abstract</a>
+        <a href="" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a class="videoButton btn btn-sm z-depth-0" role="button">Video</a>
+      </div>
+    </div>
+    
+    <p class="text">Trusted execution environments (TEEs) isolate user-space applications into secure enclaves without trusting the OS. Existing TEE memory models are rigid -- they do not allow an enclave to share memory with other enclaves. This lack of essential functionality breaks compatibility with several constructs such as shared memory, pipes, and fast mutexes that are frequently required in data intensive use-cases. In this work, we present Elasticlave, a new TEE memory model which allows sharing. Elasticlave strikes a balance between security and flexibility in managing access permissions. Our implementation of Elasticlave on RISC-V achieves performance overheads of about 10% compared to native (non-TEE) execution for data sharing workloads. In contrast, a similarly secure implementation on a rigid TEE design incurs 1-2 orders of magnitude overheads for these workloads. Thus, Elasticlave enables cross-enclave data sharing with much better performance.</p>
+    
+  </div>
+  
+</div><div class="pub-container">
+  <div class="toggle-container">
+    <div class="links">
+      <div class="pub-title">SmashEx: Smashing SGX Enclaves Using Exceptions</div>
+      <div class="pub-authors">
+        
+        
+  Jinhua Cui,
+
+
+  
+  <a href="/people/jason">Jason Yu</a>,
+
+
+  <a href="https://n.ethz.ch/~sshivaji/">Shweta Shinde</a>,
+
+
+  <a href="https://www.comp.nus.edu.sg/~prateeks/">Prateek Saxena</a>,
+
+
+  Zhiping Cai
+
+
+      </div>
+      <div class="pub-info">CCS 2021</div>
+      <div class="button-container">
+        <a class="toggleButton btn btn-sm z-depth-0" role="button">Abstract</a>
+        <a href="" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a class="videoButton btn btn-sm z-depth-0" role="button">Video</a>
+      </div>
+    </div>
+    
+    <p class="text">Exceptions are a commodity hardware functionality which is central to multi-tasking OSes as well as event-driven user applications. Normally, the OS assists the user application by lifting the semantics of exceptions received from hardware to program-friendly user signals and exception handling interfaces. However, can exception handlers work securely in user enclaves, such as those enabled by Intel SGX, where the OS is not trusted by the enclave code? In this paper, we introduce a new attack called SmashEx which exploits the OS-enclave interface for asynchronous exceptions in SGX. It demonstrates the importance of a fundamental property of safe atomic execution that is required on this interface. In the absence of atomicity, we show that asynchronous exception handling in SGX enclaves is complicated and prone to re-entrancy vulnerabilities. Our attacks do not assume any memory errors in the enclave code, side channels, or application-specific logic flaws. We concretely demonstrate exploits that cause arbitrary disclosure of enclave private memory and code-reuse (ROP) attacks in the enclave. We show reliable exploits on two widely-used SGX runtimes, Intel SGX SDK and Microsoft Open Enclave, running OpenSSL and cURL libraries respectively. We tested a total of 14 frameworks, including Intel SGX SDK and Microsoft Open Enclave, 10 of which are vulnerable. We discuss how the vulnerability manifests on both SGX1-based and SGX2-based platforms. We present potential mitigation and long-term defenses for SmashEx.</p>
+    
+  </div>
+  
+</div>
+      </div>
+    </div>
+    </div>
+  
+  <div class="category-section" data-category="Memory Safety">
+    <h2 class="category">Memory Safety</h2>
+    <div class="container">
+      <div class="row row-cols-2">
+      </div>
+    </div>
+    </div>
+  
+  <div class="category-section" data-category="OS Security">
+    <h2 class="category">OS Security</h2>
+    <div class="container">
+      <div class="row row-cols-2"><div class="pub-container">
+  <div class="toggle-container">
+    <div class="links">
+      <div class="pub-title">Capstone: A Capability-based Foundation for Trustless Secure Memory Access</div>
+      <div class="pub-authors">
+        
+        
+  
+  <a href="/people/jason">Jason Yu</a>,
+
+
+  <a href="https://www.cl.cam.ac.uk/~caw77/">Conrad Watt</a>,
+
+
+  Aditya Badole,
+
+
+  <a href="https://www.comp.nus.edu.sg/~tcarlson/">Trevor E. Carlson</a>,
+
+
+  <a href="https://www.comp.nus.edu.sg/~prateeks/">Prateek Saxena</a>
+
+
+      </div>
+      <div class="pub-info">USENIX Security 2023</div>
+      <div class="button-container">
+        <a class="toggleButton btn btn-sm z-depth-0" role="button">Abstract</a>
+        <a href="" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a class="videoButton btn btn-sm z-depth-0" role="button">Video</a>
+      </div>
+    </div>
+    
+    <p class="text">Capability-based memory isolation is a promising new architectural primitive. Software can access low-level memory only via capability handles rather than raw pointers, which provides a natural interface to enforce security restrictions. Existing architectural capability designs such as CHERI provide spatial safety, but fail to extend to other memory models that security-sensitive software designs may desire. In this paper, we propose Capstone, a more expressive architectural capability design that supports multiple existing memory isolation models in a trustless setup, i.e., without relying on trusted software components. We show how Capstone is well-suited for environments where privilege boundaries are fluid (dynamically extensible), memory sharing/delegation are desired both temporally and spatially, and where such needs are to be balanced with availability concerns. Capstone can also be implemented efficiently. We present an implementation sketch and through evaluation show that its overhead is below 50% in common use cases. We also prototype a functional emulator for Capstone and use it to demonstrate the runnable implementations of six real-world memory models without trusted software components: three types of enclave-based TEEs, a thread scheduler, a memory allocator, and Rust-style memory safety—all within the interface of Capstone.</p>
+    
+  </div>
+  
+</div><div class="pub-container">
+  <div class="toggle-container">
+    <div class="links">
+      <div class="pub-title">SmashEx: Smashing SGX Enclaves Using Exceptions</div>
+      <div class="pub-authors">
+        
+        
+  Jinhua Cui,
+
+
+  
+  <a href="/people/jason">Jason Yu</a>,
+
+
+  <a href="https://n.ethz.ch/~sshivaji/">Shweta Shinde</a>,
+
+
+  <a href="https://www.comp.nus.edu.sg/~prateeks/">Prateek Saxena</a>,
+
+
+  Zhiping Cai
+
+
+      </div>
+      <div class="pub-info">CCS 2021</div>
+      <div class="button-container">
+        <a class="toggleButton btn btn-sm z-depth-0" role="button">Abstract</a>
+        <a href="" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a class="videoButton btn btn-sm z-depth-0" role="button">Video</a>
+      </div>
+    </div>
+    
+    <p class="text">Exceptions are a commodity hardware functionality which is central to multi-tasking OSes as well as event-driven user applications. Normally, the OS assists the user application by lifting the semantics of exceptions received from hardware to program-friendly user signals and exception handling interfaces. However, can exception handlers work securely in user enclaves, such as those enabled by Intel SGX, where the OS is not trusted by the enclave code? In this paper, we introduce a new attack called SmashEx which exploits the OS-enclave interface for asynchronous exceptions in SGX. It demonstrates the importance of a fundamental property of safe atomic execution that is required on this interface. In the absence of atomicity, we show that asynchronous exception handling in SGX enclaves is complicated and prone to re-entrancy vulnerabilities. Our attacks do not assume any memory errors in the enclave code, side channels, or application-specific logic flaws. We concretely demonstrate exploits that cause arbitrary disclosure of enclave private memory and code-reuse (ROP) attacks in the enclave. We show reliable exploits on two widely-used SGX runtimes, Intel SGX SDK and Microsoft Open Enclave, running OpenSSL and cURL libraries respectively. We tested a total of 14 frameworks, including Intel SGX SDK and Microsoft Open Enclave, 10 of which are vulnerable. We discuss how the vulnerability manifests on both SGX1-based and SGX2-based platforms. We present potential mitigation and long-term defenses for SmashEx.</p>
+    
+  </div>
+  
+</div>
+      </div>
+    </div>
+    </div>
+  
+</article>
+
+
+<script>
+  $(document).ready(function() {
+      $('.toggleButton').click(function() {
+          var container = $(this).closest('.pub-container');
+          var text = container.find('.text');
+          text.toggle();
+          text.toggleClass('boxed');
+      });
+
+      $('.videoButton').click(function() {
+          var container = $(this).closest('.pub-container');
+          var video = container.find('.video');
+          video.toggle();
+          video.toggleClass('video-show');
+      });
+      $('.categoryButton').click(function() {
+          var category = $(this).data('category');
+          var section = $('.category-section[data-category="' + category + '"]');
+
+          // Toggle the visibility of the selected category section
+          section.toggle();
+
+          // Hide all other category sections
+          $('.category-section').not(section).hide();
+      });
+
+  });
+</script>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">NUS KISP Lab</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">NUS KISP Lab</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Keep It Secure and Private</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

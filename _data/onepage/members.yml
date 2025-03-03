@@ -51,8 +51,8 @@
     
     - name: Aditya Ranjan Jha
       image: ./assets/people/aditya_profile.jpeg
-      website: https://adi4comp.github.io/
-      github: https://github.com/adi4comp/bio/
+      website: https://adi4comp.github.io/bio/
+      github: https://github.com/adi4comp/
       linkedin: https://www.linkedin.com/in/adi4comp/
       twitter: https://twitter.com/adi4web
 
