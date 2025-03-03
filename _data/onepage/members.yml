@@ -16,9 +16,9 @@
     - name: Jason Yu
       image: ./assets/people/member_jason.jpeg
       website: https://www.comp.nus.edu.sg/~yuz1996/
-      # github: https://github.com/jasonyu20
-      # linkedin: https://www.linkedin.com/in/xxxx
-      # twitter: https://twitter.com/xxxx
+      github: https://github.com/jasonyu1996
+      linkedin: https://www.linkedin.com/in/jason-yu-54110a68
+      twitter: https://twitter.com/corankyu
 
     - name: Bo Wang
       image: ./assets/people/member_bo.webp
@@ -39,7 +39,7 @@
       website: https://zero0one1.github.io/
       github: https://github.com/Zero0one1
       linkedin: https://www.linkedin.com/in/ruishili/
-    
+
     - name: Tianyu Li
       image: ./assets/people/member_tianyu.jpg
       website: https://tianyuli12.github.io/
@@ -48,7 +48,7 @@
       image: ./assets/people/member_louise.jpg
       github: https://github.com/Louise-X10/
       website: https://louisex-10.github.io/
-    
+
     - name: Aditya Ranjan Jha
       image: ./assets/people/aditya_profile.jpeg
       website: https://adi4comp.github.io/bio/
