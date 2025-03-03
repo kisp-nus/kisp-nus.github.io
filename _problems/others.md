@@ -6,4 +6,4 @@ tag: "others"
 after-content: publications-rel.html
 ---
 
-ML applications to Security analaysis, Unforgeability
+ML applications to Security analaysis
