@@ -3,8 +3,7 @@
   venue: "IEEE Symposium on Security and Privacy"
   shortVenue: "S&P 2024"
   location: "Oakland, CA"
-  date_display: "May 2024"
-  date: "2024-05-01"
+  date: 2024-05
   links:
     - {type: "PDF", url: "https://ieeexplore.ieee.org/document/10646844"}
     - {type: "Artefact", url: "https://github.com/sarthak-choudhary/HIDRA"}
@@ -16,8 +15,7 @@
   venue: "ACM Conference on Computer Security Applications"
   shortVenue: "ACSAC 2016"
   location: "Los Angeles, CA"
-  date_display: "Dec 2016"
-  date: "2016-12-01"
+  date: 2016-12
   links:
     - {type: "PDF", url: "https://dl.acm.org/doi/10.1145/2991079.2991125"}
   recent: false
@@ -28,8 +26,7 @@
   venue: "In Review"
   shortVenue: "In Review 2024"
   # location: "Unknown"
-  date_display: "2024"
-  date: "2024-01"
+  date: 2024-01
   links:
     - {type: "PDF", url: "https://arxiv.org/html/2411.11434v3"}
   recent: true
@@ -40,7 +37,6 @@
   venue: "In Review"
   shortVenue: "In Review 2024"
   # location: "Unknown"
-  date_display: "2024"
   date: "2024-01"
   links: []
   recent: true
@@ -51,8 +47,7 @@
   venue: "ACM Conference on Computer and Communications Security"
   shortVenue: "CCS 2023"
   location: "Copenhagen, DK"
-  date_display: "Nov 2023"
-  date: "2023-11-01"
+  date: "2023-11"
   links:
     - {type: "PDF", url: "https://dl.acm.org/doi/10.1145/3576915.3623093"}
     - {type: "Artefact", url: "https://github.com/teobaluta/unforgeability-SGD"}
@@ -64,7 +59,6 @@
   venue: "Network and Distributed System Security Symposium"
   shortVenue: "NDSS 2019"
   location: "San Diego, CA"
-  date_display: "Feb 2019"
   date: "2019-02"
   links:
     - {type: "PDF", url: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_05A-2_Chua_paper.pdf"}
@@ -76,7 +70,6 @@
   venue: "ACM Conference on Computer and Communications Security"
   shortVenue: "CCS 2019"
   location: "London, UK"
-  date_display: "May 2019"
   date: "2019-11"
   links:
     - {type: "PDF", url: "https://www.comp.nus.edu.sg/~prateeks/papers/NPAQ.pdf"}
@@ -89,7 +82,6 @@
   venue: "International Conference on Software Engineering"
   shortVenue: "ICSE 2021"
   location: "Madrid, Spain"
-  date_display: "May 2021"
   date: "2021-05"
   links:
     - {type: "PDF", url: "https://www.comp.nus.edu.sg/~prateeks/papers/Provero-icse21.pdf"}
@@ -102,7 +94,6 @@
   venue: "ACM Conference on Computer and Communications Security"
   shortVenue: "CCS 2021"
   location: "Korea"
-  date_display: "Nov 2021"
   date: "2021-11"
   links:
     - {type: "PDF", url: "https://www.comp.nus.edu.sg/~prateeks/papers/Privact.pdf"}
@@ -114,7 +105,6 @@
   venue: "ACM Conference on Computer and Communications Security"
   shortVenue: "CCS 2022"
   location: "Los Angeles, CA"
-  date_display: "Nov 2022"
   date: "2022-11"
   links:
     - {type: "PDF", url: "https://arxiv.org/pdf/2209.08615"}
@@ -127,7 +117,6 @@
   venue: "ACM Conference on Computer and Communications Security"
   shortVenue: "CCS 2022"
   location: "Los Angeles, CA"
-  date_display: "Nov 2022"
   date: "2022-11"
   links:
     - {type: "PDF", url: "https://arxiv.org/abs/2205.03105"}
