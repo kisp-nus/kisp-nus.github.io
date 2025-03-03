@@ -5,7 +5,7 @@
     <div class="text-gray-600">
         {{ pub.authors | join: ", " }}
     </div>
-    <div><em>{{ pub.venue }}</em> ({{ pub.shortVenue }}). {{ pub.location }}, {{ pub.date }}.
+    <div><em>{{ pub.venue }}</em> ({{ pub.shortVenue }}). {{ pub.location }}, {{ pub.date_display }}.
     </div>
     <div class="flex">
         {% for link in pub.links %}

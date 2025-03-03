@@ -2,7 +2,7 @@
 layout: page
 title: "Robust Verification and privacy"
 weight: 4
-tag: "privacy"
+tag: "verification & privacy"
 after-content: publications-rel.html
 ---
 

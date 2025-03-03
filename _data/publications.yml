@@ -3,23 +3,135 @@
   venue: "IEEE Symposium on Security and Privacy"
   shortVenue: "S&P 2024"
   location: "Oakland, CA"
-  date: "May 2024"
+  date_display: "May 2024"
+  date: "2024-05-01"
   links:
     - {type: "PDF", url: "https://ieeexplore.ieee.org/document/10646844"}
     - {type: "Artefact", url: "https://github.com/sarthak-choudhary/HIDRA"}
   recent: true
-  tag: "poison"
+  tag: "poisoning"
+
+- title: "AUROR: Defending Against Poisoning Attacks in Collaborative Deep Learning Systems"
+  authors: ["Shiqi Shen", "Shruti Tople", "Prateek Saxena"]
+  venue: "ACM Conference on Computer Security Applications"
+  shortVenue: "ACSAC 2016"
+  location: "Los Angeles, CA"
+  date_display: "Dec 2016"
+  date: "2016-12-01"
+  links:
+    - {type: "PDF", url: "https://dl.acm.org/doi/10.1145/2991079.2991125"}
+  recent: false
+  tag: "poisoning"
+
+- title: "CLUE-Mark: Watermarking Diffusion Models using CLWE"
+  authors: ["Kareem Shehata", "Aashish Kolluri", "Prateek Saxena"]
+  venue: "In Review"
+  shortVenue: "In Review 2024"
+  # location: "Unknown"
+  date_display: "2024"
+  date: "2024-01"
+  links:
+    - {type: "PDF", url: "https://arxiv.org/html/2411.11434v3"}
+  recent: true
+  tag: "watermark"
+
+- title: "On Inversion Attacks and Countermeasures for Leaked Vector Representations"
+  authors: ["Louise Xu", "Mallika Ummat", "Prateek Saxena"]
+  venue: "In Review"
+  shortVenue: "In Review 2024"
+  # location: "Unknown"
+  date_display: "2024"
+  date: "2024-01"
+  links: []
+  recent: true
+  tag: "model inversion"
 
 - title: "Unforgeability in Stochastic Gradient Descent"
   authors: ["Teodora Baluta", "Ivica Nikolic", "Racchit Jain", "Divesh Aggarwal", "Prateek Saxena"]
   venue: "ACM Conference on Computer and Communications Security"
   shortVenue: "CCS 2023"
   location: "Copenhagen, DK"
-  date: "Nov 2023"
+  date_display: "Nov 2023"
+  date: "2023-11-01"
   links:
     - {type: "PDF", url: "https://dl.acm.org/doi/10.1145/3576915.3623093"}
     - {type: "Artefact", url: "https://github.com/teobaluta/unforgeability-SGD"}
   recent: true
-  tag: "watermark"
+  tag: "others"
+
+- title: "One Engine To Serve 'em All: Inferring Taint Rules Without Architectural Semantics"
+  authors: ["Zheng Leong Chua", "Yanhao Wang", "Prateek Saxena", "Zhenkai Liang", "Purui Su"]
+  venue: "Network and Distributed System Security Symposium"
+  shortVenue: "NDSS 2019"
+  location: "San Diego, CA"
+  date_display: "Feb 2019"
+  date: "2019-02"
+  links:
+    - {type: "PDF", url: "https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_05A-2_Chua_paper.pdf"}
+  recent: false
+  tag: "others"
+
+- title: "Quantitative verification of neural networks and its security applications"
+  authors: ["Teodora Baluta", "Shiqi Shen", "Shweta Shinde", "Kuldeep S. Meel", "Prateek Saxena"]
+  venue: "ACM Conference on Computer and Communications Security"
+  shortVenue: "CCS 2019"
+  location: "London, UK"
+  date_display: "May 2019"
+  date: "2019-11"
+  links:
+    - {type: "PDF", url: "https://www.comp.nus.edu.sg/~prateeks/papers/NPAQ.pdf"}
+    - {type: "Artefact", url: "https://github.com/teobaluta/NPAQ"}
+  recent: false
+  tag: "verification & privacy"
+
+- title: "Scalable Quantitative Verification For Deep Neural Networks"
+  authors: ["Teodora Baluta", "Zheng Leong Chua", "Kuldeep S. Meel", "Prateek Saxena"]
+  venue: "International Conference on Software Engineering"
+  shortVenue: "ICSE 2021"
+  location: "Madrid, Spain"
+  date_display: "May 2021"
+  date: "2021-05"
+  links:
+    - {type: "PDF", url: "https://www.comp.nus.edu.sg/~prateeks/papers/Provero-icse21.pdf"}
+    - {type: "Artefact", url: "https://github.com/teobaluta/provero"}
+  recent: true
+  tag: "verification & privacy"
+
+- title: "Private Hierarchical Clustering in Federated Networks"
+  authors: ["Aashish Kolluri", "Teodora Baluta", "Prateek Saxena"]
+  venue: "ACM Conference on Computer and Communications Security"
+  shortVenue: "CCS 2021"
+  location: "Korea"
+  date_display: "Nov 2021"
+  date: "2021-11"
+  links:
+    - {type: "PDF", url: "https://www.comp.nus.edu.sg/~prateeks/papers/Privact.pdf"}
+  recent: true
+  tag: "verification & privacy"
+
+- title: "Membership Inference Attacks and Generalization: A Causal Perspective"
+  authors: ["Teodora Baluta", "Shiqi Shen", "S. Hitarth", "Shruti Tople", "Prateek Saxena"]
+  venue: "ACM Conference on Computer and Communications Security"
+  shortVenue: "CCS 2022"
+  location: "Los Angeles, CA"
+  date_display: "Nov 2022"
+  date: "2022-11"
+  links:
+    - {type: "PDF", url: "https://arxiv.org/pdf/2209.08615"}
+    - {type: "GitHub", url: "https://github.com/teobaluta/etio"}
+  recent: true
+  tag: "verification & privacy"
+
+- title: "LPGNet: Link Private Graph Networks for Node Classification"
+  authors: ["Aashish Kolluri", "Teodora Baluta", "Prateek Saxena"]
+  venue: "ACM Conference on Computer and Communications Security"
+  shortVenue: "CCS 2022"
+  location: "Los Angeles, CA"
+  date_display: "Nov 2022"
+  date: "2022-11"
+  links:
+    - {type: "PDF", url: "https://arxiv.org/abs/2205.03105"}
+  recent: true
+  tag: "verification & privacy"
 
 # Add remaining publications with similar structure... 
