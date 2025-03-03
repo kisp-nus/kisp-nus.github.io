@@ -2,8 +2,10 @@
     <summary>Relevant Publications</summary>
     <section>
         {% for pub in site.data.publications %}
+        {% if pub.tag == page.tag %}
         {% if pub.recent %}
         {% include publications-list.html %}
+        {% endif %}
         {% endif %}
         {% endfor %}
         <div class="text-center py-6">

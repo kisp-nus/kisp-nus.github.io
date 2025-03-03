@@ -2,7 +2,9 @@
     <div class="font-semibold">
         {{ pub.title }}
     </div>
-    <div class="text-gray-600">{{ pub.authors | join: ", " }}</div>
+    <div class="text-gray-600">
+        {{ pub.authors | join: ", " }}
+    </div>
     <div><em>{{ pub.venue }}</em> ({{ pub.shortVenue }}). {{ pub.location }}, {{ pub.date }}.
     </div>
     <div class="flex">
