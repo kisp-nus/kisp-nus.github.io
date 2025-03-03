@@ -1,0 +1,25 @@
+- title: "Attacking Byzantine Robust Aggregation in High Dimensions"
+  authors: ["Sarthak Choudhary*", "Aashish Kolluri*" , "Prateek Saxena"]
+  venue: "IEEE Symposium on Security and Privacy"
+  shortVenue: "S&P 2024"
+  location: "Oakland, CA"
+  date: "May 2024"
+  links:
+    - {type: "PDF", url: "https://ieeexplore.ieee.org/document/10646844"}
+    - {type: "Artefact", url: "https://github.com/sarthak-choudhary/HIDRA"}
+  recent: true
+  tag: "poison"
+
+- title: "Unforgeability in Stochastic Gradient Descent"
+  authors: ["Teodora Baluta", "Ivica Nikolic", "Racchit Jain", "Divesh Aggarwal", "Prateek Saxena"]
+  venue: "ACM Conference on Computer and Communications Security"
+  shortVenue: "CCS 2023"
+  location: "Copenhagen, DK"
+  date: "Nov 2023"
+  links:
+    - {type: "PDF", url: "https://dl.acm.org/doi/10.1145/3576915.3623093"}
+    - {type: "Artefact", url: "https://github.com/teobaluta/unforgeability-SGD"}
+  recent: true
+  tag: "watermark"
+
+# Add remaining publications with similar structure... 

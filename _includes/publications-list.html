@@ -1,0 +1,16 @@
+<p>
+<div class="pub-title"><strong>{{ pub.title }}</strong></div>
+<div class="pub-authors">
+    {{ pub.authors | join: ", " }}
+</div>
+<div><em>{{ pub.venue }}</em> ({{ pub.shortVenue }}). {{ pub.location }}, {{ pub.date }}.
+</div>
+<div class="flex">
+    {% for link in pub.links %}
+    <a class="pub-link" href="{{ link.url }}">{{link.type }}</a>
+    {% unless forloop.last %}
+    <span class="mx-2 text-gray-600">•</span>
+    {% endunless %}
+    {% endfor %}
+</div>
+</p>

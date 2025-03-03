@@ -1,0 +1,16 @@
+<section>
+    <h1 class="pub-heading">
+        Publications
+        <hr>
+    </h1>
+    <h2 class="text-center font-light pub-subheading">Recent</h2>
+    {% for pub in site.data.publications %}
+    {% include publications-list.html %}
+
+    {% endfor %}
+    <div class="text-center py-6">
+        <a class="px-4 py-2 inline-block border border-indigo-900 rounded text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white"
+            href="/publications/">All publications</a>
+    </div>
+
+</section>

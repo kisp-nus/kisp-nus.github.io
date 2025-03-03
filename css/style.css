@@ -436,3 +436,43 @@
     font-size: 2.25rem;
   }
 }
+
+/* Styling for publications */
+.pub-heading {
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.pub-subheading {
+  font-size: 1.275rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.pub-title {
+  font-weight: 8;
+}
+
+.pub-authors {
+  color: #4B5563;
+}
+
+.pub-link {
+  color: #4338CA;
+  --tw-bg-opacity: 1;
+  border-color: rgba(3, 94, 9, var(--tw-border-opacity));
+  /* Blue */
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 0.875rem;
+  border-bottom-width: 2px;
+}
+
+
+
+.pub-link:hover {
+  text-decoration: underline;
+  --tw-text-opacity: 1;
+  color: rgba(129, 140, 248, var(--tw-text-opacity));
+}
