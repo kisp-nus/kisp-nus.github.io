@@ -29,13 +29,15 @@ The **MAPS** project aims to answer these questions in a principled manner by id
 of
 current schemes and drawing from cryptographically hard problems to establish robust security guarantees.
 Specifically,
-we study four main areas: 1) the practical impact of data poisoning attacks in federated settings and the
-computational
-limitations of robust aggregation defenses against such attacks; 2) watermarking schemes for AI-generated content
-that
-is provably secure against all possible attacks; 3) defenses against model inversion attacks, including a
-cryptographic
-primitive that prevents the recovery of sensitive inputs; 4) we investigate verification of desired properties of ML
+we study four main areas:
+
+1. the practical impact of data poisoning attacks in federated settings and the
+computational limitations of robust aggregation defenses against such attacks; 
+2. watermarking schemes for AI-generated content that
+is provably secure against all possible attacks; 
+3. defenses against model inversion attacks, including a cryptographic
+primitive that prevents the recovery of sensitive inputs; 
+4. we investigate verification of desired properties of ML
 systems and practical differential privacy in federated networks and GNNs.
 
 ---
