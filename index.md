@@ -1,5 +1,5 @@
 ---
-layout: main_project
+layout: home
 title: MAPS
 slug: maps
 description: Machine learning and Algorithms for Practical Security

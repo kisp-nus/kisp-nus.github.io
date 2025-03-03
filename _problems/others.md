@@ -1,8 +1,7 @@
 ---
-title: "Others"
-description: "Doesn't fit in other themes"
-problem_statement: 
-contribution: 
+layout: page
+title: "Doesn't fit in other themes"
+weight: 5
 ---
 
 ML applications to Security analaysis, Unforgeability

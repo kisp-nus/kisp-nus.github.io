@@ -1,8 +1,7 @@
 ---
-title: "ML Privacy"
-description: "Robust Verification and privacy"
-problem_statement: 
-contribution: 
+layout: page
+title: "Robust Verification and privacy"
+weight: 4
 ---
 
 There are more examples of principled approaches to analyzing machine learning

@@ -1,6 +1,8 @@
 ---
-title: "ML Robustness"
-description: "Poisoning Attacks & Robust Aggregation"
+layout: page
+title: "Poisoning Attacks & Robust Aggregation"
+weight: 1
+description: 
 problem_statement: "Give theoretical guarantees for ML robustness"
 contribution: "We designed a HiDra attack to show current robust aggregators are impractical."
 ---

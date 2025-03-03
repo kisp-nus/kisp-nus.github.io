@@ -1,8 +1,8 @@
 ---
-title: "Watermark"
-description: "Watermarking AI"
-problem_statement: 
-contribution: 
+layout: page
+title: "Watermarking AI"
+weight: 2
+
 ---
 
 How can one verify whether a data sample (text/image/sound) comes from a generative AI model? One way is to insert "watermarks" into AI-generated content at source, which can later be verified using a secret key by the end user’s device. Doing so has many security applications:
