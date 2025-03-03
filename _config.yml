@@ -31,8 +31,6 @@ collections:
   people:
     output: True
     permalink: /:collection/:name
-  pubs:
-    output: False
   problems:
     output: True
     permalink: /:collection/:name
