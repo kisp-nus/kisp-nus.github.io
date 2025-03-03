@@ -63,6 +63,10 @@ plugins:
 #
 exclude:
   - archived/
+  - _people/
+  - _projects/
+  - _pubs/
+  -  .jekyll-cache
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
