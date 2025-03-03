@@ -34,7 +34,8 @@ collections:
   pubs:
     output: False
   problems:
-    output: False
+    output: True
+    permalink: /:collection/:name
 
 # GitHub mandatory config
 lsi: false
