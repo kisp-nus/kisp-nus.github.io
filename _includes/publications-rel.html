@@ -1,0 +1,15 @@
+<details markdown="1">
+    <summary>Relevant Publications</summary>
+    <section>
+        {% for pub in site.data.publications %}
+        {% if pub.recent %}
+        {% include publications-list.html %}
+        {% endif %}
+        {% endfor %}
+        <div class="text-center py-6">
+            <a class="px-4 py-2 inline-block border border-indigo-900 rounded text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white"
+                href="/publications/">All publications</a>
+        </div>
+
+    </section>
+</details>
