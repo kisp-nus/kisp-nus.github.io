@@ -1,0 +1,40 @@
+<div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
+    <div class="px-6 text-center">
+        <h1 class="inline-block text-4xl font-semibold text-gray-900">Publications
+            <hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900">
+        </h1>
+    </div>
+    <div class="mt-8">
+        <div class="px-6 sm:px-8 mx-auto max-w-screen-md">
+            <div>
+                <h2 class="mt-6 mb-2 text-center text-lg uppercase text-gray-600 font-light">Recent</h2>
+                {% for pub in site.data.onepage.publications %}
+                {% if pub.recent %}
+                <div class="py-4 text-sm">
+                    <div class="font-semibold">
+                        <p>{{ pub.title }}</p>
+                    </div>
+                    <div class="text-gray-600">{{ pub.authors | join: " and " }}</div>
+                    <div class="-my-2 markdown">
+                        <p><em>{{ pub.venue }}</em> ({{ pub.shortVenue }}). {{ pub.location }}, {{ pub.date }}.</p>
+                    </div>
+                    <div class="flex">
+                        {% for link in pub.links %}
+                        <a class="border-b-2 border-indigo-900 hover:no-underline hover:text-indigo-400"
+                            href="{{ link.url }}">{{ link.type }}</a>
+                        {% unless forloop.last %}
+                        <span class="mx-2 text-gray-600">•</span>
+                        {% endunless %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+                <div class="text-center py-6">
+                    <a class="px-4 py-2 inline-block border border-indigo-900 rounded text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white"
+                        href="https://www.comp.nus.edu.sg/~prateeks/publications.html">All publications</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

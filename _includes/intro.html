@@ -1,0 +1,14 @@
+<div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
+    <div class="px-6 text-center">
+        <h1 class="inline-block text-4xl font-semibold text-gray-900">About Us
+            <hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900">
+        </h1>
+    </div>
+    <div class="mt-8">
+        <div class="px-6 sm:px-8 mx-auto max-w-screen-md markdown">
+            <p><img src="./assets/group_photo.jpg" alt="Group photo" /></p>
+            {% capture intro_content %}{% include_relative index_intro.md %}{% endcapture %}
+            {{ intro_content | markdownify }}
+        </div>
+    </div>
+</div>

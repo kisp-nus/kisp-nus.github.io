@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html%}
+
+<body>
+    <div id="__next">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+    </div>
+    <script>
+        function navbarOnClick() {
+            var x = document.getElementById("navOpts");
+            if (x.classList.contains("hidden")) {
+                x.classList.remove("hidden");
+            } else {
+                x.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+
+</html>

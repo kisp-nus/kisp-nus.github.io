@@ -1,0 +1,23 @@
+<div class="bg-white pt-8 pb-2 sm:pt-8 sm:pb-4">
+    <div class="px-6 text-center">
+        <h1 class="inline-block text-4xl font-semibold text-gray-900">News
+            <hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900">
+        </h1>
+    </div>
+    <div class="mt-4">
+        <div class="px-6 sm:px-8 mx-auto max-w-screen-md news">
+            <div>
+                {% for item in site.data.onepage.news %}
+                <div class="sm:flex">
+                    <div class="-mb-2 font-medium sm:py-2 sm:w-24 sm:flex-none">
+                        <div class="prose">{{ item.date }}</div>
+                    </div>
+                    <div class="sm:flex-auto">
+                        <div class="prose">{{ item.content | markdownify }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

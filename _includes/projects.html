@@ -1,0 +1,24 @@
+<div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
+    <div class="px-6 text-center">
+        <h1 class="inline-block text-4xl font-semibold text-gray-900">
+            Projects
+            <hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900">
+        </h1>
+    </div>
+    <div class="mt-4">
+        <div class="px-6 sm:px-8 mx-auto max-w-screen-md projects">
+            {% for project in site.data.onepage.projects %}
+            <div class="sm:flex py-4">
+                <div class="sm:-mb-2 mb-2 font-medium sm:py-2 sm:w-24 sm:flex-none">{{ project.name }}</div>
+                <div class="sm:-mb-2 mb-2 sm:flex-auto">
+                    <p>{{ project.description }}</p>
+                </div>
+                <div class="sm:-mb-2 mb-2 font-medium sm:py-2 sm:w-12 sm:flex-none">
+                    <a class="px-4 py-2 inline-block border border-indigo-900 rounded text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white"
+                        href="{{ project.url }}">View Details</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
