@@ -54,17 +54,14 @@ labmission: ""
   </header>
   <div class="h-6 sm:h-16"></div>
 </div>
-<div class="home"><div class="py-6 bg-gray-900 bg-hero-pattern text-white lg:py-9 2xl:py-12">
+<div class="home"><div class="py-6 bg-gray-100 bg-hero-pattern text-black lg:py-9 2xl:py-12">
    <div class="px-6 sm:px-8 mx-auto max-w-screen-md">
-      <div class="sm:flex sm:items-center">
-         <div class="sm:w-3/5">
-            <div class="sm:w-3/5">
-                 <image src="./assets/logo_white.png" style="display: inline-block;" alt="KISP Lab Logo"/>
-                 <image src="./assets/logo_white2.png" style="display: inline-block; padding-top: 9px; padding-left: 5px;" alt="KISP Lab Logo"/>
-            </div>
-            <div class="mt-2 font-light text-base md:text-xl lg:text-2xl">{{ page.labslogan }}</div>
-         </div>
-         <div class="text-sm mt-6 sm:mt-0 sm:w-2/5 lg:text-base">{{ page.labmission }}</div>
+      <div class="sm:flex sm:items-center justify-between w-full">
+          <div class="sm:w-3/5">
+                <image src="./assets/logo_black.png" style="display: inline-block;" alt="KISP Lab Logo"/>
+                <image src="./assets/logo_black2.png" style="display: inline-block; padding-top: 9px; padding-left: 5px;" alt="KISP Lab Logo"/>
+          </div>
+          <div class="mt-2 font-light text-base md:text-xl lg:text-2xl">{{ page.labslogan }}</div>
       </div>
    </div>
 </div>
@@ -72,7 +69,7 @@ labmission: ""
       <div id="about">
         <div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
           <div class="px-6 text-center">
-             <h1 class="inline-block text-4xl font-semibold text-gray-900">About Us<hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900"></h1>
+             <h1 class="inline-block text-4xl font-semibold text-gray-900">About Us</h1>
           </div>
           <div class="mt-8">
             <div class="px-6 sm:px-8 mx-auto max-w-screen-md markdown">
@@ -87,7 +84,7 @@ labmission: ""
     <div id="news">
       <div class="bg-white pt-8 pb-2 sm:pt-8 sm:pb-4">
         <div class="px-6 text-center">
-            <h1 class="inline-block text-4xl font-semibold text-gray-900">News<hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900"></h1>
+            <h1 class="inline-block text-4xl font-semibold text-gray-900">News</h1>
         </div>
         <div class="mt-4">
           <div class="px-6 sm:px-8 mx-auto max-w-screen-md news">
@@ -110,7 +107,7 @@ labmission: ""
     <div id="about">
       <div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
         <div class="px-6 text-center">
-            <h1 class="inline-block text-4xl font-semibold text-gray-900">Research Themes<hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900"></h1>
+            <h1 class="inline-block text-4xl font-semibold text-gray-900">Research Themes</h1>
         </div>
         <div class="mt-8">
           <div class="px-6 sm:px-8 mx-auto max-w-screen-md markdown">
@@ -126,7 +123,7 @@ labmission: ""
     <div id="people">
       <div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
         <div class="px-6 text-center">
-          <h1 class="inline-block text-4xl font-semibold text-gray-900">People<hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900"></h1>
+          <h1 class="inline-block text-4xl font-semibold text-gray-900">People</h1>
         </div>
         <div class="mt-8">
           <div class="px-6 sm:px-8">
@@ -173,7 +170,7 @@ labmission: ""
         <div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
             <div class="px-6 text-center">
               <h1 class="inline-block text-4xl font-semibold text-gray-900">
-                Projects<hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900">
+                Projects
               </h1>
             </div>
             <div class="mt-4">
@@ -183,7 +180,7 @@ labmission: ""
                     <div class="sm:-mb-2 mb-2 font-medium sm:py-2 sm:w-24 sm:flex-none">{{ project.name }}</div>
                     <div class="sm:-mb-2 mb-2 sm:flex-auto"><p>{{ project.description }}</p></div>
                     <div class="sm:-mb-2 mb-2 font-medium sm:py-2 sm:w-12 sm:flex-none">
-                      <a class="px-4 py-2 inline-block border border-indigo-900 rounded text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white" href="{{ project.url }}">View Details</a>
+                      <a class="px-4 py-2 inline-block border border-indigo-900 rounded-small text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white" href="{{ project.url }}">View Details</a>
                     </div>
                   </div>
                 {% endfor %}
@@ -196,7 +193,7 @@ labmission: ""
       <div id="publications">
         <div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
             <div class="px-6 text-center">
-              <h1 class="inline-block text-4xl font-semibold text-gray-900">Publications<hr class="h-1 w-4/5 mx-auto mt-2 bg-indigo-900"></h1>
+              <h1 class="inline-block text-4xl font-semibold text-gray-900">Publications</h1>
             </div>
             <div class="mt-8">
               <div class="px-6 sm:px-8 mx-auto max-w-screen-md">
@@ -225,7 +222,7 @@ labmission: ""
                     {% endif %}
                   {% endfor %}
                   <div class="text-center py-6">
-                    <a class="px-4 py-2 inline-block border border-indigo-900 rounded text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white" 
+                    <a class="px-4 py-2 inline-block border border-indigo-900 rounded-small text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white" 
                        href="https://www.comp.nus.edu.sg/~prateeks/publications.html">All publications</a>
                   </div>
                 </div>
