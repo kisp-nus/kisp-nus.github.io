@@ -1,6 +1,6 @@
 - name: Capstone
   fullname: A Capability-based Foundation for Trustless Secure Memory Access
-  description: Tired of worrying about memory access? Try Capstone!
+  description: Tired of worrying about memory safety? Try Capstone!
   url: https://capstone.kisp-lab.org/
   image: ./assets/projects/capstone.png
 

@@ -3,10 +3,12 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding-bottom: 100px;
     }
     .project {
         position: relative;
         text-align: center;
+        margin: 10px;
     }
     .project-icon-img {
         object-fit: cover;
@@ -14,14 +16,19 @@
         height: 150px;
         width: 150px;
         cursor: pointer;
-        position: relative;
     }
     .project-description {
         display: none;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        white-space: wrap; 
+        white-space: wrap;
+        top: 100%;
+        width: 200px;
+        padding: 10px;
+    }
+    .project {
+        transition: transform 0.2s;
     }
     .project:hover {
         transform: scale(1.2);
@@ -29,7 +36,6 @@
 
     .project:hover .project-description {
         display: block;
-        width: 40%;
     }
 </style>
 
