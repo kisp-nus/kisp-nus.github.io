@@ -21,5 +21,8 @@
     <title>KISP Lab | Keep it Secure and Private @NUS</title>
     <meta content="index, follow" name="robots" />
     <meta name="next-head-count" content="10" />
-    <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="stylesheet" href="{{ '/assets/index.css' | relative_url }}">
+    {% if site.use_tailwind %}
+    <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | relative_url }}">
+    {% endif %}
 </head>
