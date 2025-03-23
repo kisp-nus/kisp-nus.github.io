@@ -19,17 +19,9 @@
     .project-description {
         display: none;
         position: absolute;
-        top: 100%;
         left: 50%;
         transform: translateX(-50%);
-        width: 150px;
-        background-color: rgba(0, 0, 0, 0.75);
-        color: white;
-        padding: 5px;
-        border-radius: 5px;
-        font-size: 12px;
-        text-align: center;
-        white-space: nowrap;
+        white-space: wrap; 
     }
     .project:hover {
         transform: scale(1.2);
@@ -37,6 +29,7 @@
 
     .project:hover .project-description {
         display: block;
+        width: 40%;
     }
 </style>
 
@@ -58,7 +51,7 @@
                 </div>
                 <div class="mx-auto mt-2 text-center leading-tight">{{ project.name }}</div>
                 <div class="mx-auto mt-1 text-center leading-tight font-light">{{ project.fullname }}</div>
-                <div class="project-description">
+                <div class="project-description px-2 py-2 rounded-sm text-center text-sm md:text-base lg:text-l text-white bg-indigo-900">
                     {{ project.description }}
                 </div>
             </div>
