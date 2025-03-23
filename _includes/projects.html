@@ -1,23 +1,64 @@
+<style>
+    .projects-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .project {
+        position: relative;
+        text-align: center;
+    }
+    .project-icon-img {
+        object-fit: cover;
+        object-position: center;
+        height: 150px;
+        width: 150px;
+        cursor: pointer;
+        position: relative;
+    }
+    .project-description {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .project-description {
+        display: block;
+    }
+</style>
+
 <div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
     <div class="px-6 text-center">
         <h1 class="inline-block text-4xl font-semibold text-gray-900">
             Projects
         </h1>
     </div>
-    <div class="mt-4">
-        <div class="px-6 sm:px-8 mx-auto max-w-screen-md projects">
-            {% for project in site.data.onepage.projects %}
-            <div class="sm:flex py-4">
-                <div class="sm:-mb-2 mb-2 font-medium sm:py-2 sm:w-24 sm:flex-none">{{ project.name }}</div>
-                <div class="sm:-mb-2 mb-2 sm:flex-auto">
-                    <p>{{ project.description }}</p>
+
+    <div class="flex flex-wrap justify-center projects-container">
+        {% for project in site.data.onepage.projects %}
+        <div class="w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 project">
+            <div class="p-4">
+                <div class="project-icon">
+                    <a href="{{ project.url }}">
+                        <img class="mx-auto project-icon-img" alt="{{ project.name }}" src="{{ project.image }}">
+                    </a>
                 </div>
-                <div class="sm:-mb-2 mb-2 font-medium sm:py-2 sm:w-12 sm:flex-none">
-                    <a class="px-4 py-2 inline-block border border-indigo-900 rounded-small text-indigo-900 font-semibold hover:no-underline hover:bg-indigo-900 hover:text-white"
-                        href="{{ project.url }}">View Details</a>
+                <div class="mx-auto mt-2 text-center leading-tight">{{ project.name }}</div>
+                <div class="project-description">
+                    {{ project.description }}
                 </div>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
     </div>
+
 </div>

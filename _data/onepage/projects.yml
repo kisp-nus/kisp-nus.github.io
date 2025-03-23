@@ -1,11 +1,17 @@
 - name: Capstone
-  description: A Capability-based Foundation for Trustless Secure Memory Access
+  fullname: A Capability-based Foundation for Trustless Secure Memory Access
+  description: Tired of worrying about memory access? Try Capstone!
   url: https://capstone.kisp-lab.org/
+  image: ./assets/projects/capstone.png
 
 - name: APT
-  description: Automated Program Translation
+  fullname: Automated Program Translation
+  description: Wondering how to translate your program from one language to another? APT is here to help!
   url: https://kisp.comp.nus.edu.sg/projects/apt
+  image: ./assets/projects/apt.png
 
 - name: MAPS
-  description: Machine Learning and Algorithms for Practical Security
+  fullname: Machine Learning and Algorithms for Practical Security
+  description: Trying to solve ML security problems once and for all? MAPS is here to help!
   url: https://maps.kisp-lab.org/
+  image: ./assets/projects/maps.png
