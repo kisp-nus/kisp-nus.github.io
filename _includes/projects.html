@@ -9,6 +9,7 @@
         position: static;
         text-align: center;
         margin: 10px;
+        width: 33.333333%;
     }
     .project-icon-img {
         object-fit: cover;
@@ -38,7 +39,8 @@
         display: block;
     }
 
-    @media screen and (max-width: 640px) {
+    /* For small screens, display projects in columns, display descriptions */
+    @media screen {
         .projects-container {
             flex-direction: column;
             align-items: center;
@@ -64,6 +66,39 @@
             margin-top: 10px;
         }
     }
+
+    /* For medium screens, display projects in rows, display descriptions */
+    @media (min-width: 768px) {
+        .md\:projects-container {
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .md\:project {
+            width: 25%;
+            margin: 20px;
+            position: static;
+        }
+
+    }
+
+    /* For large screens, display projects in rows, hide descriptions until hover */
+    @media (min-width: 1024px) {
+        .lg\:project {
+            width: 20%;
+        }
+
+        .lg\:project-description {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .xl\:project {
+            width: 16.666667%;
+        }
+    }
 </style>
 
 <div class="bg-white pt-8 pb-4 sm:pt-16 sm:pb-6">
@@ -73,9 +108,9 @@
         </h1>
     </div>
 
-    <div class="projects-container">
+    <div class="projects-container sm:projects-container md:projects-container lg:projects-container xl:projects-container">
         {% for project in site.data.onepage.projects %}
-        <div class="w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6 project">
+        <div class="project sm:project md:project lg:project xl:project">
             <div class="p-4">
                 <div class="project-icon">
                     <a href="{{ project.url }}">
@@ -84,7 +119,8 @@
                 </div>
                 <div class="mx-auto mt-2 text-center leading-tight"><a href="{{ project.url }}">{{ project.name }}</a></div>
                 <div class="mx-auto mt-1 text-center leading-tight font-light">{{ project.fullname }}</div>
-                <div class="project-description px-2 py-2 rounded-sm text-center text-sm md:text-base lg:text-l text-white bg-indigo-900">
+                <div class="project-description md:project-description lg:project-description xl:project-description absolute
+                px-2 py-2 rounded-sm text-center text-sm md:text-base lg:text-l text-white bg-indigo-900">
                     {{ project.description }}
                 </div>
             </div>
