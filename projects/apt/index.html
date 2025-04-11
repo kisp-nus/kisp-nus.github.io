@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Automated Program Translation (KISP Lab @NUS)">
+  <meta property="og:title" content="Research Projects on Program Translation from KISP Lab @NUS" />
+  <meta property="og:description" content="Automated Program Translation (KISP Lab @NUS)" />
+  <meta property="og:url" content="https://trans.kisp-lab.org/" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" /> -->
+
+
+  <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Code Translation, Program Synthesis, Software Security">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Automated Program Translation @KISP Lab</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro|Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="index20250302.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.js"></script>
+  <script src="static/js/bulma-slider.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript" src="./static/vendor/incremental-dom/incremental-dom.js"></script>
+  <script type="text/javascript" src="./static/vendor/incremental-dom/jsonml2idom.js"></script>
+
+
+  <!-- Add this hidden summary section right after the body tag -->
+  <div style="position: absolute; left: -9999px; top: -9999px;">
+    <h1>Automated Program Translation Research at KISP Lab, NUS</h1>
+    
+    <h2>Research Projects</h2>
+    <h3>Program Skeletons for Automated Program Translation (PLDI 2025)</h3>
+    <p>Authors: Bo Wang*, Tianyu Li*, Ruishi Li, Umang Mathur, Prateek Saxena</p>
+    <p>Abstract: We introduce program skeletons, a framework for automating software translation between programming languages. Skeletons capture the high-level structure of source code while abstracting away language-specific details, enabling translation into idiomatic target code. This abstraction allows for modular translation, where individual code fragments can be translated separately and correctly. We implement a prototype system, Skel, for translating Python to JavaScript. Experiments on real-world Python programs show that 95% of code fragments can be automatically translated, and all final outputs passing whole-program test suites.</p>
+    
+    <h3>Translating C to Rust: Lessons from a User Study (NDSS 2025)</h3>
+    <p>Authors: Ruishi Li*, Bo Wang*, Tianyu Li, Prateek Saxena, Ashish Kundu</p>
+    <p>Abstract: Rust aims to offer full memory safety for programs, unlike C. We study how humans translate C to Rust, comparing their approach to automatic tools. Users produce safer Rust code with diverse strategies, often using zero-cost abstractions for temporal safety. The insights can guide future automations for C-to-Rust conversion.</p>
+    
+    <h3>TransMap: Pinpointing Mistakes in Neural Code Translation (FSE 2023)</h3>
+    <p>Authors: Bo Wang, Ruishi Li, Mingkai Li, Prateek Saxena</p>
+    <p>Abstract: LLMs help translate code but often introduce semantic errors, which are hard to fix due to their black-box nature. We propose TransMap, the first tool to pinpoint these semantic mistakes in LLM-based code translations. TransMap translates Python to JavaScript and can pinpoint translation errors in programs, including Python libraries up to 1K lines. A preliminary user study suggests it can reduce debugging time by 70%, speeding up the process of LLM-based code migration.</p>
+    
+    <h3>User-Customizable Transpilation of Scripting Languages (OOPSLA 2023)</h3>
+    <p>Authors: Bo Wang, Aashish Kolluri, Teodora Baluta, Ivica Nikolić, Prateek Saxena</p>
+    <p>Abstract: Transpilers convert code between languages but often lack user customizability. Conventional transpilers are rigid, while neural ones allow some control but remain unpredictable. Both struggle with the "last mile" problem, failing on some code parts. We propose DuoGlot, a transpiler that incrementally refines translations based on user guidance while reusing existing rules. DuoGlot translates Python to JavaScript, achieving 90% accuracy on GeeksForGeeks benchmarks and outperforming existing tools.</p>
+    
+    <h3>SynGuar: Guaranteeing Generalization in Programming by Example (FSE 2021)</h3>
+    <p>Authors: Bo Wang, Teodora Baluta, Aashish Kolluri, Prateek Saxena</p>
+    <p>Abstract: Programming by Example (PBE) aims to synthesize programs from examples, but ensuring they generalize well is challenging. We propose SynGuar, a PAC-style framework for PBE, providing theoretical guarantees on generalization error. SynGuar determines the needed sample size, often just a few hundred examples for less than 5% error with 98% confidence. We instantiated the idea for PROSE and STUN-based synthesis by implementing program space counting for sample size computation.</p>
+    
+    <h2>Research Team</h2>
+    <ul>
+      <li>Bo Wang (PhD Student)</li>
+      <li>Ruishi Li (PhD Student)</li>
+      <li>Tianyu Li (PhD Student)</li>
+      <li>Prateek Saxena (Faculty)</li>
+      <li>Umang Mathur (Faculty)</li>
+    </ul>
+    
+    <p>Research supported by Crystal Center and Cisco Research</p>
+  </div>
+
+
+  <section id="hero" class="hero is-small"></section>
+     
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script type="text/javascript">
+function ASSERT(cond, msg) {
+  if (!cond) {
+    throw new Error(msg);
+  }
+}
+function f_check_wellformed_jsonml(jsonml) {
+  // it should be a list.
+  if (!Array.isArray(jsonml)) {
+    return ["span.error", "ERROR: It should be a list, but got: " + JSON.stringify(jsonml)];
+  }
+  // the list cannot be empty.
+  if (jsonml.length === 0) {
+    return ["span.error", "ERROR: The list cannot be empty."];
+  }
+  // the first element must be a string.
+  if (typeof jsonml[0] !== "string") {
+    return ["span.error", "ERROR: The first element must be a string, but got: " + JSON.stringify(jsonml[0])];
+  }
+  let new_result = [jsonml[0]];
+  // the rest of the elements must be pairs.
+  for (let i = 1; i < jsonml.length; i++) {
+    // it must be either string, or valid jsonml.
+    // if i == 1, it can also be a dict.
+    // skip over undefined.
+    if (jsonml[i] === undefined) {
+      continue;
+    }
+    if (typeof jsonml[i] !== "string" && !Array.isArray(jsonml[i])) {
+      if (i == 1 && typeof jsonml[i] === "object") {
+        new_result.push(jsonml[i]);
+      } else {
+        new_result.push(["span.error", "ERROR: The " + i + "th element must be either a string or a list, but got: " + JSON.stringify(jsonml[i])]);
+      }
+    } else {
+      if (typeof jsonml[i] !== "string") {
+        let child_jsonml = f_check_wellformed_jsonml(jsonml[i]);
+        new_result.push(child_jsonml);
+      } else {
+        new_result.push(jsonml[i]);
+      }
+    }
+  }
+  return new_result;
+}
+
+// set Visual States.
+window._VS_ = {
+  rerender_count: 0,
+  switches: {}
+}
+function VSS_SET() {
+  // get args. the last arg is true or false. the rest are keys.
+  let args = Array.from(arguments);
+  let last_val = args[args.length - 1];
+  ASSERT(typeof last_val === "boolean", "last_val is not a boolean");
+  let keys = args.slice(0, -1);
+  ASSERT(keys.length > 0, "keys.length > 0");
+  // set the keys to true.
+  let curr_obj = window._VS_.switches;
+  for (let key of keys) {
+    if (curr_obj[key] === undefined || curr_obj[key] === null) {
+      curr_obj[key] = {};
+    } else {
+      ASSERT(typeof curr_obj[key] === "object", "curr_obj[key] is not an object");
+    }
+    // the path until the last key is open.
+    if (last_val === true) curr_obj[key]["is_open"] = true; 
+    curr_obj = curr_obj[key];
+  }
+  curr_obj["is_open"] = last_val;
+}
+function VSS_GET() {
+  let keys = Array.from(arguments);
+  let curr_obj = window._VS_.switches;
+  for (let key of keys) {
+    if (curr_obj[key] === undefined || curr_obj[key] === null) {
+      return false;
+    }
+    curr_obj = curr_obj[key];
+  }
+  let result = curr_obj["is_open"];
+  ASSERT(typeof result === "boolean", "result is not a boolean");
+  return result;
+}
+window._EH_ = {};
+window._EH_.tmpl_set_VS_default = (default_key) => {
+  return () => {
+    console.log("set_VS_default", default_key);
+    VSS_SET("paper", default_key, "button_qs", true);
+    VSS_SET("paper", default_key, "abstract", false);
+    for (let paper of ["SynGuar", "DuoGlot", "TransMap", "C2Rust", "SKEL"]) {
+      if (paper !== default_key) {
+        VSS_SET("paper", paper, false);
+      }
+      for (let sec of ["Abstract", "Overview", "Evaluation"]) {
+        if (sec === "Abstract") {
+          VSS_SET("paper", paper + "-" + sec, true);
+        } else {
+          VSS_SET("paper", paper + "-" + sec, false);
+        }
+      }
+    }
+    // set other papers to false.
+    window._rerender();
+  }
+}
+window._EH_.set_VS_synguar = window._EH_.tmpl_set_VS_default("SynGuar");
+window._EH_.set_VS_duoglot = window._EH_.tmpl_set_VS_default("DuoGlot");
+window._EH_.set_VS_transmap = window._EH_.tmpl_set_VS_default("TransMap");
+window._EH_.set_VS_c2rust = window._EH_.tmpl_set_VS_default("C2Rust");
+window._EH_.set_VS_skel = window._EH_.tmpl_set_VS_default("SKEL");
+window._EH_.unfoldPost = function(e) {
+  // e.preventDefault();
+  // find paperkey of parent.
+  // let the_card = $(this).closest(".material-card");
+  let curr_elem = e.target;
+  while (curr_elem.tagName !== "ARTICLE") {
+    curr_elem = curr_elem.parentElement;
+  }
+  ASSERT(curr_elem.tagName === "ARTICLE", "curr_elem is not an article");
+  let paperkey = curr_elem.getAttribute("data-paperkey");
+  let is_triggered = curr_elem.classList.contains("triggered") ? ".triggered" : "";
+  console.log("CLICK on paperkey", paperkey, is_triggered);
+  // $(this).closest(".material-card").toggleClass("triggered");
+  // $(this).closest(".material-card-action").toggleClass("triggered");
+  // set the VS to the paperkey.
+  VSS_SET("paper", paperkey, !is_triggered);
+  setTimeout(() => {
+    window._rerender();
+  }, 20);
+}
+function onlyinit() {
+  return window._VS_.rerender_count > 1;
+}
+
+window._F_JSONML_MAIN = () => {
+  function f_vspace() {
+    return ["div.vspace"];
+  }
+  function f_my_diagram() {
+    function is_selected(paper) {
+      return VSS_GET("paper", paper) ? ".is-selected" : "";
+    }
+    return ["div.my-diagram-wrapper",
+      ["div.my-diagram", 
+        ["div.my-diagram-row",
+          ["div.my-diagram-cell", 
+            ["div.loc-cell-inner", "1-10 LoC"] 
+          ],
+          ["div.my-diagram-cell", 
+            ["div.loc-cell-inner", "10-100 LoC"]
+          ],
+          ["div.my-diagram-cell.flex2", 
+            ["div.loc-cell-inner", "100-1000 LoC"]
+          ],
+          ["div.my-diagram-cell", 
+            ["div.loc-cell-inner", "1000+ LoC"]
+          ],
+        ],
+        ["div.my-diagram-row",
+          ["div.my-diagram-cell", 
+            ["div.work-cell-inner" + is_selected("SynGuar"), {onclick: window._EH_.set_VS_synguar}, "SynGuar", ["br"], "FSE 2021"] // on click, set the expansion state to  SynGuarDefault
+          ],
+          ["div.my-diagram-cell", 
+            ["div.work-cell-inner" + is_selected("DuoGlot"), {onclick: window._EH_.set_VS_duoglot}, "DuoGlot", ["br"], "OOPSLA 2023"]
+          ],
+          ["div.my-diagram-cell", 
+            ["div.work-cell-inner" + is_selected("TransMap"), {onclick: window._EH_.set_VS_transmap}, "TransMap", ["br"], "FSE 2023"]
+          ],
+          ["div.my-diagram-cell", 
+            ["div.work-cell-inner" + is_selected("C2Rust"), {onclick: window._EH_.set_VS_c2rust}, "C->Rust Study", ["br"], "NDSS 2025"]
+          ],
+          ["div.my-diagram-cell", 
+            ["div.work-cell-inner" + is_selected("SKEL"), {onclick: window._EH_.set_VS_skel}, "SKEL", ["br"], "PLDI 2025"]
+          ],
+          // ["div.my-diagram-cell", 
+          //   ["div.work-cell-inner" + is_selected("Working"), {onclick: window._EH_.set_VS_working}, "Working on it!", ["br"], "..."]
+          // ],
+        ],
+      ]
+    ];
+  }
+
+  function f_publication(paperkey, title, authors, links, conference, nested_details, additional_info) {
+    let is_triggered = VSS_GET("paper", paperkey) ? ".triggered" : "";
+    let result = ["article.material-card" + is_triggered, {"data-paperkey": paperkey},
+      ["header", {onclick: window._EH_.unfoldPost},
+      ["div.material-card-action" + is_triggered,
+          ["a",
+            ["i.material-icons.md-36", "keyboard_arrow_right"]
+          ]
+      ],  
+      ["h4.title.is-4.publication-title.paper-title", title],
+        ["div.is-size-5.publication-authors",
+          ...authors.map((author, idx) => {
+            return [
+              "span.author-block", 
+              ["a", {href: author.link, target: "_blank"}, author.name],
+              author.is_cofirst ? ["sup", "*"] : undefined,
+              idx === authors.length - 1 ? undefined : ","
+            ]
+          }),
+          ["div.is-size-5.publication-authors.is-inline", 
+            ["span.author-block", conference]
+          ]
+        ],
+      ],
+      ["div.material-card-content",
+        ["div.column.has-text-centered.paper-links",
+          ["div.publication-links",
+            ...links.map((link) => {
+              let icon = ["span.error", "ERROR: Unknown link type: " + link.type];
+              if (link.type === "arxiv") {
+                icon = ["i.ai.ai-arxiv"];
+              } else if (link.type === "github") {
+                icon = ["i.fab.fa-github"];
+              } else if (link.type === "pdf") {
+                icon = ["i.fas.fa-file-pdf"];
+              }
+              return ["span.link-block",
+                ["a.external-link.button.is-normal.is-rounded.is-dark", {href: link.link, target: "_blank"},
+                  ["span.icon", icon],
+                  ["span", link.name]
+                ]
+              ]
+            })
+          ]
+        ],
+        nested_details ? nested_details : undefined,
+        additional_info ? additional_info : undefined,
+        // ["footer",
+        //   ["a.material-card-footer-link", {href: "##"}, "READ MORE"]
+        // ]
+      ],
+    ];
+    return result;
+  }
+  function f_separator() {
+    return undefined;
+    // return ["hr.my-separator"];
+  }
+  function f_carousel(images_info) {
+    return ["div.container",
+      ["div.carousel.results-carousel", {skip: onlyinit() },
+        ...images_info.map((image_info, idx) => {
+          return ["div.item-" + idx,
+            ["img", {src: image_info.link, alt: image_info.caption}],
+            ["h2.subtitle.has-text-centered", image_info.caption]
+          ]
+        })
+      ]
+    ];
+  }
+  function f_nested_details(paperkey_prefix, ...sections) {
+    let secs = ["div.nested-details"];
+    for (let [sec_title_str, sec_content_list] of sections) {
+      let sec_paperkey = paperkey_prefix + "-" + sec_title_str;
+      let is_triggered = VSS_GET("paper", sec_paperkey) ? ".triggered" : "";
+      let sec_elem = ["article.material-card" + is_triggered, {"data-paperkey": sec_paperkey},
+        ["header", {onclick: window._EH_.unfoldPost},
+        ["div.material-card-action" + is_triggered,
+            ["a",
+              ["i.material-icons.md-36", "keyboard_arrow_right"]
+            ]
+        ],  
+        ["h5.title.is-4.publication-title.section-title", sec_title_str],
+          // ["div.is-size-6.publication-authors",
+          //   String(sec_content_list[0])
+          // ],
+        ],
+        ["div.material-card-content.section-content",
+          ...sec_content_list
+        ],
+      ];
+      secs.push(sec_elem);
+    }
+    secs.push(f_vspace());
+    return secs;
+  }
+  function f_paper_poster() {
+    return ["div.container",
+      // ["h5.title", "Poster"],
+      ["iframe", {src: "static/pdfs/SynGuar-Poster.pdf", width: "100%", height: "550"}]
+    ];
+  }
+  function f_member(name, img_name, title, link) {
+    const size = "150px";
+    return ["div.my-member-block",
+      // a round picture
+      ["img.my-member-img", {src: "static/images/" + img_name}],
+      ["a.my-member-name", {href: link, target: "_blank"}, name],
+      ["div.my-member-title", title]
+    ];
+  }
+  let result_jsonml = ["div.hero-body",
+    ["div.container.is-max-desktop",
+      ["div.columns.is-centered",
+        ["div.column.has-text-centered",
+          ["h1.title.is-1.publication-title", "Automated Program Translation"],
+          ["h2.title.is-2.publication-title", "KISP Lab @NUS"],
+          f_my_diagram(),
+          f_separator(),
+          f_vspace(),
+          ["accordwrap", 
+          f_publication("SKEL", "Program Skeletons for Automated Program Translation", 
+              [
+                {link: "https://halocore.github.io/", name: "Bo Wang", is_cofirst: true},
+                {link: "https://tianyuli12.github.io/", name: "Tianyu Li", is_cofirst: true},
+                {link: "https://zero0one1.github.io/", name: "Ruishi Li", is_cofirst: false},
+                {link: "https://www.comp.nus.edu.sg/~umathur/", name: "Umang Mathur", is_cofirst: false},
+                {link: "https://www.comp.nus.edu.sg/~prateeks/", name: "Prateek Saxena", is_cofirst: false},
+              ], 
+              [
+                {link: "https://arxiv.org/abs/2504.07483", name: "arXiv", type: "arxiv"},
+                {link: "https://github.com/lty12b9b0a1/SKEL", name: "Code", type: "github"},
+              ],
+              "PLDI 2025",
+              f_nested_details("SKEL", 
+                ["Abstract", [
+                  "The paper introduces program skeletons, a framework for automating software translation between programming languages. Skeletons capture the high-level structure of source code while abstracting away language-specific details, enabling translation into idiomatic target code. This abstraction allows for modular translation, where individual code fragments can be translated separately and correctly. We implement a prototype system, Skel, for translating Python to JavaScript. Experiments on real-world Python programs show that 95% of code fragments can be automatically translated, and all final outputs passing whole-program test suites."]],
+                // ["Overview", ["This is the overview"]],
+                // ["Evaluation", ["This is the evaluation"]],
+              ),
+              f_carousel([
+                {link: "static/images/skel/deco_moexp2.png", caption: "An illustration of a program skeleton."},
+                {link: "static/images/skel/skeleton_syntactic.png", caption: "Syntactic structure of a program skeleton."},
+                {link: "static/images/skel/deco_jit.png", caption: "Execution of code fragments are modeled as communicating processes."},
+                {link: "static/images/skel/deco_moexp3.png", caption: "Execution of a code fragment in our conceptual model."},
+                {link: "static/images/skel/deco_jit2.png", caption: "Execution-order translation loop."},
+              ])
+            ),
+            f_publication("C2Rust", "Translating C to Rust: Lessons from a User Study", 
+              [
+                {link: "https://zero0one1.github.io/", name: "Ruishi Li", is_cofirst: true},
+                {link: "https://halocore.github.io/", name: "Bo Wang", is_cofirst: true},
+                {link: "https://tianyuli12.github.io/", name: "Tianyu Li", is_cofirst: false},
+                {link: "https://www.comp.nus.edu.sg/~prateeks/", name: "Prateek Saxena", is_cofirst: false},
+                {link: "https://sites.google.com/view/ashishkundu/home", name: "Ashish Kundu", is_cofirst: false}
+              ], 
+              [
+                {link: "https://arxiv.org/abs/2411.14174", name: "Paper", type: "pdf"},
+                // {link: "https://example.com", name: "Supplementary", type: "pdf"},
+                // {link: "https://example.com", name: "Code", type: "github"},
+                {link: "https://arxiv.org/abs/2411.14174", name: "arXiv", type: "arxiv"}
+              ],
+              "NDSS 2025",
+              f_nested_details("C2Rust", 
+                ["Abstract", ["Rust aims to offer full memory safety for programs, unlike C. We study how humans translate C to Rust, comparing their approach to automatic tools. Users produce safer Rust code with diverse strategies, often using zero-cost abstractions for temporal safety. The insights can guide future automations for C-to-Rust conversion."]],
+                // ["Overview", ["This is the overview"]],
+                // ["Evaluation", ["This is the evaluation"]],
+              ),
+              f_carousel([
+                {link: "static/images/userstudyeg.png", caption: "Borrowing Mechanism in Rust. "},
+                {link: "static/images/userstudyapi.png", caption: "Translating C APIs to Rust."},
+                {link: "static/images/userstudytype.png", caption: "Mapping C Types to Rust Types."},
+              ])
+            ),
+            f_publication("TransMap", "TransMap: Pinpointing Mistakes in Neural Code Translation", 
+              [
+                {link: "https://halocore.github.io/", name: "Bo Wang", is_cofirst: false},
+                {link: "https://zero0one1.github.io/", name: "Ruishi Li", is_cofirst: false},
+                {link: "https://mingkai-li.github.io/", name: "Mingkai Li", is_cofirst: false},
+                {link: "https://www.comp.nus.edu.sg/~prateeks/", name: "Prateek Saxena", is_cofirst: false},
+              ], 
+              [
+                {link: "https://dl.acm.org/doi/pdf/10.1145/3611643.3616322", name: "Paper", type: "pdf"},
+                {link: "https://github.com/HALOCORE/TransMap", name: "Code", type: "github"},
+              ],
+              "FSE 2023",
+              f_nested_details("TransMap",
+                ["Abstract", ["LLMs help translate code but often introduce semantic errors, which are hard to fix due to their black-box nature. We propose TransMap, the first tool to pinpoint these semantic mistakes in LLM-based code translations. TransMap translates Python to JavaScript and can pinpoint translation errors in programs, including Python libraries up to 1K lines. A preliminary user study suggests it can reduce debugging time by 70%, speeding up the process of LLM-based code migration."]],
+                // ["Overview", ["This is the overview"]],
+                // ["Evaluation", ["This is the evaluation"]],
+              ),
+              f_carousel([
+                {link: "static/images/transmapcasestudy.png", caption: "TransMap Tool Demo."},
+                {link: "static/images/transmapsrcmap.png", caption: "Source Mapping created by TransMap."},
+                {link: "static/images/transmapdynamic.png", caption: "Dynamic Analysis by TransMap."},
+              ])
+            ),
+            f_publication("DuoGlot", "User-Customizable Transpilation of Scripting Languages", 
+              [
+                {link: "https://halocore.github.io/", name: "Bo Wang", is_cofirst: false},
+                {link: "https://aashishkolluri.github.io/", name: "Aashish Kolluri", is_cofirst: false},
+                {link: "https://teobaluta.github.io/", name: "Teodora Baluta", is_cofirst: false},
+                {linl: "https://sites.google.com/view/ivica-nikolic-sg/home", name: "Ivica Nikolić", is_cofirst: false},
+                {link: "https://www.comp.nus.edu.sg/~prateeks/", name: "Prateek Saxena", is_cofirst: false},
+              ], 
+              [
+                {link: "https://dl.acm.org/doi/10.1145/3586034", name: "Paper", type: "pdf"},
+                {link: "https://github.com/HALOCORE/DuoGlot", name: "Code", type: "github"},
+              ],
+              "OOPSLA 2023",
+              f_nested_details("DuoGlot",
+                ["Abstract", ["Transpilers convert code between languages but often lack user customizability. Conventional transpilers are rigid, while neural ones allow some control but remain unpredictable. Both struggle with the \"last mile\" problem, failing on some code parts. We propose DuoGlot, a transpiler that incrementally refines translations based on user guidance while reusing existing rules. DuoGlot translates Python to JavaScript, achieving 90% accuracy on GeeksForGeeks benchmarks and outperforming existing tools"]],
+                // ["Overview", ["This is the overview"]],
+                // ["Evaluation", ["This is the evaluation"]],
+              ),
+              f_carousel([
+                {link: "static/images/duoglotsearch.gif", caption: "DuoGlot: Automated Translation Search."},
+                {link: "static/images/duoglotspecific.png", caption: "DuoGlot: A task-specific user-guided translator."},
+                {link: "static/images/duoglotrule.png", caption: "DuoGlot: Translation Rule Synthesis from Code Snippet."},
+              ])
+            ),
+            f_publication("SynGuar", "SynGuar: Guaranteeing Generalization in Programming by Example", 
+              [
+                {link: "https://halocore.github.io/", name: "Bo Wang", is_cofirst: false},
+                {link: "https://teobaluta.github.io/", name: "Teodora Baluta", is_cofirst: false},
+                {link: "https://aashishkolluri.github.io/", name: "Aashish Kolluri", is_cofirst: false},
+                {link: "https://www.comp.nus.edu.sg/~prateeks/", name: "Prateek Saxena", is_cofirst: false},
+              ], 
+              [
+                {link: "https://dl.acm.org/doi/10.1145/3468264.3468621", name: "Paper", type: "pdf"},
+                {link: "https://github.com/HALOCORE/SynGuar", name: "Code", type: "github"},
+                {link: "./static/pdfs/SynGuar-Poster.pdf", name: "Poster", type: "pdf"},
+              ],
+              "FSE 2021",
+              f_nested_details("SynGuar",
+                ["Abstract", ["Programming by Example (PBE) aims to synthesize programs from examples, but ensuring they generalize well is challenging. We propose SynGuar, a PAC-style framework for PBE, providing theoretical guarantees on generalization error. SynGuar determines the needed sample size, often just a few hundred examples for <5% error with 98% confidence. We instantiated the idea for PROSE and STUN-based synthesis by implementing program space counting for sample size computation."]],
+                // ["Overview", ["This is the overview"]],
+                // ["Evaluation", ["This is the evaluation"]],
+              ),
+              // f_paper_poster()
+              f_carousel([
+                {link: "static/images/synguar_algorithm.png", caption: "The SynGuar algorithm: determining sufficient sample size on the fly."},
+                {link: "static/images/synguar_pac.png", caption: "The PAC-style formalization of PBE synthesis."},
+                {link: "static/images/synguar_counting.png", caption: "We modify PBE synthesizers to support program space counting."},
+              ])
+            ),
+          ],
+          f_separator(),
+        ]
+      ],
+    ],
+    f_vspace(),
+    f_vspace(),
+    f_vspace(),
+    ["div.container.is-max-desktop",
+      ["div.columns.is-centered",
+        ["div.column.has-text-centered",
+          ["h4.title.publication-title", "Current Members"],
+          ["div.my-member-row",
+            f_member("Bo Wang", "member_bo.webp", "PhD Student", "https://halocore.github.io/"),
+            f_member("Ruishi Li", "member_ruishi.jpg", "PhD Student", "https://zero0one1.github.io/"),
+            f_member("Tianyu Li", "member_tianyu.jpg", "PhD Student", "https://tianyuli12.github.io/"),
+            f_member("Prateek Saxena", "member_prateek.jpg", "Faculty", "https://www.comp.nus.edu.sg/~prateeks/"),
+            f_member("Umang Mathur", "member_umang.png", "Faculty", "https://www.comp.nus.edu.sg/~umathur/"),
+          ]
+        ]
+      ],
+    ],
+    f_vspace(),
+    f_vspace(),
+    f_vspace(),
+    // ["div.container.is-max-desktop",
+    //   ["div.columns.is-centered",
+    //     ["div.column.has-text-centered",
+    //       ["h4.title.publication-title", "Sponsors"],
+    //       ["div.my-member-row",
+    //         ["h5.title.is-5.publication-title", {style: "margin: 16px;"}, "Crystal Center"],
+    //         ["h5.title.is-5.publication-title", {style: "margin: 16px;"}, "Cisco Research"],
+    //       ]
+    //     ]
+    //   ],
+    // ],
+    ["div.container.is-max-desktop",
+      ["div.columns.is-centered",
+        ["div.column.has-text-centered",
+          ["div.title.is-5.publication-title.weight300", 
+            "We gratefully acknowledge the support of ",
+            ["a", {href: "https://www.crystal.comp.nus.edu.sg/", target: "_blank"}, "Crystal Center"],
+            " and ",
+            ["a", {href: "https://research.cisco.com/", target: "_blank"}, "Cisco Research"],
+            ".",
+          ],
+        ]
+      ],
+    ],
+    // ["div.rerender-count", "Rendering Stats: " + window._VS_.rerender_count]
+  ];
+  return f_check_wellformed_jsonml(result_jsonml);
+}
+</script>
+<script type="text/javascript">
+window._JSONML_DEBUG = false;
+let _ELEMS = {
+  hero: document.getElementById("hero")
+}
+
+function render_patch(jsonml, elem) {
+  if (window._JSONML_DEBUG) console.log("Rendering jsonml:", jsonml);
+  IncrementalDOM.patch(elem, jsonml2idom, jsonml);
+}
+
+window._rerender = () => {
+  window._VS_.rerender_count += 1;
+  console.log("[INFO] rerender", window._VS_.rerender_count);
+  render_patch(window._F_JSONML_MAIN(), _ELEMS.hero);
+}
+
+function main() {
+  console.log("=== main() BEGIN ===");
+  window.HELP_IMPROVE_VIDEOJS = false;
+  window._EH_.set_VS_c2rust();
+  window._rerender();
+
+  function init_carousel() {
+    // Check for click events on the navbar burger icon
+    var options = {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+      infinite: true,
+      autoplay: false,
+      autoplaySpeed: 5000,
+    }
+    // Initialize all div with carousel class
+    var carousels = bulmaCarousel.attach('.carousel', options);
+    bulmaSlider.attach();
+  }
+  // run it when the page is loaded
+  // $(document).ready(function() {
+  //   init_carousel();
+  // });
+  // don't use jquery, use plain js
+  document.addEventListener("DOMContentLoaded", function() {
+    init_carousel();
+  });
+  console.log("=== main() END ===");
+}
+main();
+</script>
+</body>
+
+</html>
