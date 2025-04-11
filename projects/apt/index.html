@@ -10,7 +10,7 @@
   <meta property="og:description" content="Automated Program Translation (KISP Lab @NUS)" />
   <meta property="og:url" content="https://trans.kisp-lab.org/" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <!-- <meta property="og:image" content="./static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" /> -->
 
@@ -18,7 +18,7 @@
   <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <!-- <meta name="twitter:image" content="./static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image"> -->
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Code Translation, Program Synthesis, Software Security">
@@ -26,20 +26,20 @@
 
 
   <title>Automated Program Translation @KISP Lab</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="./static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro|Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="index20250302.css">
+  <link rel="stylesheet" href="./index20250302.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.js"></script>
-  <script src="static/js/bulma-slider.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.js"></script>
+  <script src="./static/js/bulma-slider.js"></script>
 </head>
 
 <body>
@@ -392,14 +392,14 @@ window._F_JSONML_MAIN = () => {
   function f_paper_poster() {
     return ["div.container",
       // ["h5.title", "Poster"],
-      ["iframe", {src: "static/pdfs/SynGuar-Poster.pdf", width: "100%", height: "550"}]
+      ["iframe", {src: "./static/pdfs/SynGuar-Poster.pdf", width: "100%", height: "550"}]
     ];
   }
   function f_member(name, img_name, title, link) {
     const size = "150px";
     return ["div.my-member-block",
       // a round picture
-      ["img.my-member-img", {src: "static/images/" + img_name}],
+      ["img.my-member-img", {src: "./static/images/" + img_name}],
       ["a.my-member-name", {href: link, target: "_blank"}, name],
       ["div.my-member-title", title]
     ];
@@ -434,11 +434,11 @@ window._F_JSONML_MAIN = () => {
                 // ["Evaluation", ["This is the evaluation"]],
               ),
               f_carousel([
-                {link: "static/images/skel/deco_moexp2.png", caption: "An illustration of a program skeleton."},
-                {link: "static/images/skel/skeleton_syntactic.png", caption: "Syntactic structure of a program skeleton."},
-                {link: "static/images/skel/deco_jit.png", caption: "Execution of code fragments are modeled as communicating processes."},
-                {link: "static/images/skel/deco_moexp3.png", caption: "Execution of a code fragment in our conceptual model."},
-                {link: "static/images/skel/deco_jit2.png", caption: "Execution-order translation loop."},
+                {link: "./static/images/skel/deco_moexp2.png", caption: "An illustration of a program skeleton."},
+                {link: "./static/images/skel/skeleton_syntactic.png", caption: "Syntactic structure of a program skeleton."},
+                {link: "./static/images/skel/deco_jit.png", caption: "Execution of code fragments are modeled as communicating processes."},
+                {link: "./static/images/skel/deco_moexp3.png", caption: "Execution of a code fragment in our conceptual model."},
+                {link: "./static/images/skel/deco_jit2.png", caption: "Execution-order translation loop."},
               ])
             ),
             f_publication("C2Rust", "Translating C to Rust: Lessons from a User Study", 
@@ -462,9 +462,9 @@ window._F_JSONML_MAIN = () => {
                 // ["Evaluation", ["This is the evaluation"]],
               ),
               f_carousel([
-                {link: "static/images/userstudyeg.png", caption: "Borrowing Mechanism in Rust. "},
-                {link: "static/images/userstudyapi.png", caption: "Translating C APIs to Rust."},
-                {link: "static/images/userstudytype.png", caption: "Mapping C Types to Rust Types."},
+                {link: "./static/images/userstudyeg.png", caption: "Borrowing Mechanism in Rust. "},
+                {link: "./static/images/userstudyapi.png", caption: "Translating C APIs to Rust."},
+                {link: "./static/images/userstudytype.png", caption: "Mapping C Types to Rust Types."},
               ])
             ),
             f_publication("TransMap", "TransMap: Pinpointing Mistakes in Neural Code Translation", 
@@ -485,9 +485,9 @@ window._F_JSONML_MAIN = () => {
                 // ["Evaluation", ["This is the evaluation"]],
               ),
               f_carousel([
-                {link: "static/images/transmapcasestudy.png", caption: "TransMap Tool Demo."},
-                {link: "static/images/transmapsrcmap.png", caption: "Source Mapping created by TransMap."},
-                {link: "static/images/transmapdynamic.png", caption: "Dynamic Analysis by TransMap."},
+                {link: "./static/images/transmapcasestudy.png", caption: "TransMap Tool Demo."},
+                {link: "./static/images/transmapsrcmap.png", caption: "Source Mapping created by TransMap."},
+                {link: "./static/images/transmapdynamic.png", caption: "Dynamic Analysis by TransMap."},
               ])
             ),
             f_publication("DuoGlot", "User-Customizable Transpilation of Scripting Languages", 
@@ -509,9 +509,9 @@ window._F_JSONML_MAIN = () => {
                 // ["Evaluation", ["This is the evaluation"]],
               ),
               f_carousel([
-                {link: "static/images/duoglotsearch.gif", caption: "DuoGlot: Automated Translation Search."},
-                {link: "static/images/duoglotspecific.png", caption: "DuoGlot: A task-specific user-guided translator."},
-                {link: "static/images/duoglotrule.png", caption: "DuoGlot: Translation Rule Synthesis from Code Snippet."},
+                {link: "./static/images/duoglotsearch.gif", caption: "DuoGlot: Automated Translation Search."},
+                {link: "./static/images/duoglotspecific.png", caption: "DuoGlot: A task-specific user-guided translator."},
+                {link: "./static/images/duoglotrule.png", caption: "DuoGlot: Translation Rule Synthesis from Code Snippet."},
               ])
             ),
             f_publication("SynGuar", "SynGuar: Guaranteeing Generalization in Programming by Example", 
@@ -534,9 +534,9 @@ window._F_JSONML_MAIN = () => {
               ),
               // f_paper_poster()
               f_carousel([
-                {link: "static/images/synguar_algorithm.png", caption: "The SynGuar algorithm: determining sufficient sample size on the fly."},
-                {link: "static/images/synguar_pac.png", caption: "The PAC-style formalization of PBE synthesis."},
-                {link: "static/images/synguar_counting.png", caption: "We modify PBE synthesizers to support program space counting."},
+                {link: "./static/images/synguar_algorithm.png", caption: "The SynGuar algorithm: determining sufficient sample size on the fly."},
+                {link: "./static/images/synguar_pac.png", caption: "The PAC-style formalization of PBE synthesis."},
+                {link: "./static/images/synguar_counting.png", caption: "We modify PBE synthesizers to support program space counting."},
               ])
             ),
           ],
