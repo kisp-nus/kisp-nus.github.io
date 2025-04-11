@@ -1,5 +1,5 @@
 - date: "Apr 11"
-  content : "Our paper on translating programs via skeleton is accepted at PLDI 2025: [Arxiv](https://arxiv.org/abs/2504.07483) and [Code](https://github.com/lty12b9b0a1/SKEL)"
+  content : "\"[Program Skeletons for Automated Program Translation](https://arxiv.org/abs/2504.07483)\" @ PLDI25 (see [code](https://github.com/lty12b9b0a1/SKEL))"
 # - date: "Mar 01"
 #   content : "AnvilHDL Compiler is open-sourced now: [Code](https://github.com/jasonyu1996/anvil)" 
 - date: "Jan 16"

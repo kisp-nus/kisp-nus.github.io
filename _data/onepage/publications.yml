@@ -1,3 +1,13 @@
+- title: "Program Skeletons for Automated Program Translation"
+  authors: ["Bo Wang*", "Tianyu Li*", "Ruishi Li", "Umang Mathur", "Prateek Saxena"]
+  venue: "Programming Language Design and Implementation"
+  shortVenue: "PLDI 2025"
+  location: "Seoul, South Korea"
+  date: "June 2025"
+  links:
+    - {type: "PDF", url: "https://arxiv.org/abs/2504.07483"}
+  recent: true
+
 - title: "Translating C To Rust: Lessons from a User Study"
   authors: ["Ruishi Li*", "Bo Wang*", "Tianyu Li", "Prateek Saxena", "Ashish Kundu"]
   venue: "NDSS Symposium 2025"
