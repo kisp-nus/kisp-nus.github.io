@@ -195,20 +195,20 @@ function VSS_GET() {
   return result;
 }
 window._EH_ = {};
-window._EH_.tmpl_set_VS_default = (default_key) => {
+window._EH_.tmpl_set_VS_default = (default_keys) => {
   return () => {
-    console.log("set_VS_default", default_key);
-    VSS_SET("paper", default_key, "button_qs", true);
-    VSS_SET("paper", default_key, "abstract", false);
+    console.log("set_VS_default", default_keys);
     for (let paper of ["SynGuar", "DuoGlot", "TransMap", "C2Rust", "SKEL"]) {
-      if (paper !== default_key) {
+      if (! default_keys.includes(paper)) {
         VSS_SET("paper", paper, false);
-      }
-      for (let sec of ["Abstract", "Overview", "Evaluation"]) {
-        if (sec === "Abstract") {
-          VSS_SET("paper", paper + "-" + sec, true);
-        } else {
-          VSS_SET("paper", paper + "-" + sec, false);
+      } else {
+        VSS_SET("paper", paper, true);
+        for (let sec of ["Abstract", "Overview", "Evaluation"]) {
+          if (sec === "Abstract") {
+            VSS_SET("paper", paper + "-" + sec, true);
+          } else {
+            VSS_SET("paper", paper + "-" + sec, false);
+          }
         }
       }
     }
@@ -216,11 +216,12 @@ window._EH_.tmpl_set_VS_default = (default_key) => {
     window._rerender();
   }
 }
-window._EH_.set_VS_synguar = window._EH_.tmpl_set_VS_default("SynGuar");
-window._EH_.set_VS_duoglot = window._EH_.tmpl_set_VS_default("DuoGlot");
-window._EH_.set_VS_transmap = window._EH_.tmpl_set_VS_default("TransMap");
-window._EH_.set_VS_c2rust = window._EH_.tmpl_set_VS_default("C2Rust");
-window._EH_.set_VS_skel = window._EH_.tmpl_set_VS_default("SKEL");
+window._EH_.set_VS_synguar = window._EH_.tmpl_set_VS_default(["SynGuar"]);
+window._EH_.set_VS_duoglot = window._EH_.tmpl_set_VS_default(["DuoGlot"]);
+window._EH_.set_VS_transmap = window._EH_.tmpl_set_VS_default(["TransMap"]);
+window._EH_.set_VS_c2rust = window._EH_.tmpl_set_VS_default(["C2Rust"]);
+window._EH_.set_VS_skel = window._EH_.tmpl_set_VS_default(["SKEL"]);
+window._EH_.set_VS_init = window._EH_.tmpl_set_VS_default(["C2Rust", "SKEL"]);
 window._EH_.unfoldPost = function(e) {
   // e.preventDefault();
   // find paperkey of parent.
@@ -612,8 +613,8 @@ window._rerender = () => {
 
 function main() {
   console.log("=== main() BEGIN ===");
-  window.HELP_IMPROVE_VIDEOJS = false;
-  window._EH_.set_VS_c2rust();
+  window.HELP_IMPROVE_VIDEOJS = false;  
+  window._EH_.set_VS_init();
   window._rerender();
 
   function init_carousel() {
