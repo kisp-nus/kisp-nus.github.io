@@ -1,3 +1,37 @@
+
+- title: "Securing Mixed Rust with Hardware Capabilities"
+  authors: ["Jason Zhijingcheng Yu*", "Fangqi Han*", "Kaustab Choudhary", "Trevor E. Carlson", "Prateek Saxena"]
+  venue: "ACM Conference on Computer and Communications Security"
+  shortVenue: "CCS 2025"
+  location: "Taipei, Taiwan"
+  date: "October 2025"
+  links:
+    - {type: "PDF", url: "https://www.comp.nus.edu.sg/~prateeks/papers/CapsLock.pdf"}
+    - {type: "Artefact", url: "https://zenodo.org/records/15727686"}
+  recent: true
+
+- title: "A Practical and Secure Byzantine Robust Aggregator"
+  authors: ["De Zhang Lee", "Aashish Kolluri", "Prateek Saxena", "Ee-Chien Chang"]
+  venue: "ACM Conference on Computer and Communications Security"
+  shortVenue: "CCS 2025"
+  location: "Taipei, Taiwan"
+  date: "October 2025"
+  links:
+    - {type: "PDF", url: "https://arxiv.org/abs/2506.23183"}
+    # - {type: "Artefact", url: "https://github.com/project-starch/caplifive-qemu"}
+  recent: true
+
+- title: "Caplification: Bridging Capability-Aware and Capability-Oblivious Software"
+  authors: ["Jason Zhijingcheng Yu", "Mingkai Li", "Aditya Badole", "Trevor E. Carlson", "Michael Swift", "Prateek Saxena"]
+  venue: "ACM Symposium on Access Control Models and Technologies"
+  shortVenue: "SACMAT 2025"
+  location: "Stony Brook, New York, USA"
+  date: "July 2025"
+  links:
+    - {type: "PDF", url: "https://www.comp.nus.edu.sg/~prateeks/papers/Caplifive.pdf"}
+    - {type: "Artefact", url: "https://github.com/project-starch/caplifive-qemu"}
+  recent: true
+
 - title: "Program Skeletons for Automated Program Translation"
   authors: ["Bo Wang*", "Tianyu Li*", "Ruishi Li", "Umang Mathur", "Prateek Saxena"]
   venue: "Programming Language Design and Implementation"
