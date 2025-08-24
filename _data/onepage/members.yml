@@ -9,6 +9,9 @@
     - name: Ivica Nikolić
       image: ./assets/people/member_ivica.jpeg
       website: https://sites.google.com/view/ivica-nikolic-sg/home
+    - name: Wu Hao
+      image: ./assets/people/wuhao.png
+      # website:
 
 - kind: graduate_students
   members:
@@ -58,6 +61,32 @@
 
     - name: Mallika Prabhakar
       image: ./assets/people/member_mallika.png
+
+
+- kind: Faculty Collaborators
+  members:
+    - name: Umang Mathur
+      image: ./assets/people/Umang.png
+      website: https://www.comp.nus.edu.sg/~umathur/
+
+    - name: Trevor E. Carlson
+      image: ./assets/people/trevor.png
+      website: https://www.comp.nus.edu.sg/~tcarlson/
+
+# - kind: Research Collaborators
+#   members:
+#     - name: Alexey 
+#       image: 
+#       website:
+#     - name: Han Fangqi
+#       image: 
+#       website: 
+#     - name: Lee De Zhang
+#       image :
+#       website:
+#     - name: Fu Yihao
+#       image: ./assets/people/yihao.png
+#       website: https://www.linkedin.com/in/yihao-fu-6b6801263/
 
 # - kind: alumni
 #   members:
