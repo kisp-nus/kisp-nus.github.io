@@ -18,7 +18,7 @@
   date: "October 2025"
   links:
     - {type: "PDF", url: "https://arxiv.org/abs/2506.23183"}
-    # - {type: "Artefact", url: "https://github.com/project-starch/caplifive-qemu"}
+    - {type: "Artefact", url: "https://github.com/dezhanglee/randeigen_artifacts"}
   recent: true
 
 - title: "Caplification: Bridging Capability-Aware and Capability-Oblivious Software"
