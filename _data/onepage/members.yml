@@ -10,7 +10,7 @@
       image: ./assets/people/member_ivica.jpeg
       website: https://sites.google.com/view/ivica-nikolic-sg/home
     - name: Wu Hao
-      image: ./assets/people/wuhao.jpg
+      image: ./assets/people/wuhao.png
       # website:
 
 - kind: graduate_students
