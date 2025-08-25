@@ -63,7 +63,7 @@
       image: ./assets/people/member_mallika.png
 
 
-- kind: Faculty Collaborators
+- kind: Recent Collaborators
   members:
     - name: Umang Mathur
       image: ./assets/people/Umang.png
@@ -73,20 +73,21 @@
       image: ./assets/people/trevor.png
       website: https://www.comp.nus.edu.sg/~tcarlson/
 
-# - kind: Research Collaborators
-#   members:
-#     - name: Alexey 
-#       image: 
-#       website:
-#     - name: Han Fangqi
-#       image: 
-#       website: 
-#     - name: Lee De Zhang
-#       image :
-#       website:
-#     - name: Fu Yihao
-#       image: ./assets/people/yihao.png
-#       website: https://www.linkedin.com/in/yihao-fu-6b6801263/
+    - name: Alexey Paznikov
+      image: ./assets/people/alexey.png
+      website: https://apaznikov.github.io/
+
+    - name: Han Fangqi
+      image: ./assets/people/fangqi.png
+      website: 
+
+    - name: Lee De Zhang
+      image: ./assets/people/lee.png
+      website:
+
+    - name: Fu Yihao
+      image: ./assets/people/yihao.png
+      website: https://www.linkedin.com/in/yihao-fu-6b6801263/
 
 # - kind: alumni
 #   members:
