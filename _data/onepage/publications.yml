@@ -50,7 +50,8 @@
   location: "San Diego, CA"
   date: "February 2025"
   links:
-    - {type: "PDF", url: "https://arxiv.org/abs/2411.14174"}
+    - {type: "PDF", url: "https://www.ndss-symposium.org/wp-content/uploads/2025-1407-paper.pdf"}
+    - {type: "Benchmark", url: "https://github.com/Zero0one1/c2rs-userstudy-benchmark"}
   recent: true
 
 - title: "Attacking Byzantine Robust Aggregation in High Dimensions"
