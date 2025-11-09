@@ -1,6 +1,6 @@
 - name: Capstone
-  fullname: A Capability-based Foundation for Trustless Secure Memory Access
-  description: Tired of worrying about memory safety? Try Capstone!
+  fullname: Capability-based Architectural Foundation for Expressive Security
+  description: How can the computer architecture provide principled and provable support for diverse software security needs? Capstone provides an answer!
   url: https://capstone.kisp-lab.org/
   image: ./assets/projects/capstone.png
 
