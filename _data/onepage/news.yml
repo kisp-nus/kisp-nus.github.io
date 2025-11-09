@@ -1,3 +1,7 @@
+- date: "Oct 30"
+  content: "\"[Anvil: A General-Purpose Timing-Safe Hardware Description Language](https://arxiv.org/abs/2503.19447)\" @ ASPLOS 2026"
+- date: "Sep 19"
+  content: "\"[Model Provenance Testing for Large Language Models](https://arxiv.org/abs/2502.00706)\" @ NeurIPS 2025"
 - date: "May 21"
   content: "\"[Securing Mixed Rust with Hardware Capabilities](https://www.comp.nus.edu.sg/~prateeks/papers/CapsLock.pdf)\" @ CCS 2025"
 - date: "May 21"
