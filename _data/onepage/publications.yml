@@ -1,4 +1,26 @@
 
+- title: "Anvil: A General-Purpose Timing-Safe Hardware Description Language"
+  authors: ["Jason Zhijingcheng Yu*", "Aditya Ranjan Jha*", "Umang Mathur", "Trevor E. Carlson", "Prateek Saxena"]
+  venue: "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)"
+  shortVenue: "ASPLOS 2026"
+  location: "Pittsburgh, PA, USA"
+  date: "March 2026"
+  links:
+    - {type: "PDF", url: "https://arxiv.org/abs/2503.19447"}
+    - {type: "Artefact", url: "https://github.com/jasonyu1996/anvil"}
+  recent: true
+
+- title: "Model Provenance Testing for Large Language Models"
+  authors: ["Ivica Nikolic", "Teodora Baluta", "Prateek Saxena"]
+  venue: "Annual Conference on Neural Information Processing Systems (NeurIPS)"
+  shortVenue: "NeurIPS 2025"
+  location: "San Diego, California, USA"
+  date: "December 2025"
+  links:
+    - {type: "PDF", url: "https://arxiv.org/abs/2502.00706"}
+    - {type: "Artefact", url: "https://github.com/ivicanikolicsg/model_provenance_testing"}
+  recent: true
+
 - title: "Securing Mixed Rust with Hardware Capabilities"
   authors: ["Jason Zhijingcheng Yu*", "Fangqi Han*", "Kaustab Choudhary", "Trevor E. Carlson", "Prateek Saxena"]
   venue: "ACM Conference on Computer and Communications Security"
