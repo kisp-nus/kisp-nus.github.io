@@ -1,7 +1,7 @@
 
 - title: "Anvil: A General-Purpose Timing-Safe Hardware Description Language"
   authors: ["Jason Zhijingcheng Yu*", "Aditya Ranjan Jha*", "Umang Mathur", "Trevor E. Carlson", "Prateek Saxena"]
-  venue: "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)"
+  venue: "International Conference on Architectural Support for Programming Languages and Operating Systems"
   shortVenue: "ASPLOS 2026"
   location: "Pittsburgh, PA, USA"
   date: "March 2026"
@@ -12,7 +12,7 @@
 
 - title: "Model Provenance Testing for Large Language Models"
   authors: ["Ivica Nikolic", "Teodora Baluta", "Prateek Saxena"]
-  venue: "Annual Conference on Neural Information Processing Systems (NeurIPS)"
+  venue: "Annual Conference on Neural Information Processing Systems"
   shortVenue: "NeurIPS 2025"
   location: "San Diego, California, USA"
   date: "December 2025"
