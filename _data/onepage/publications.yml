@@ -8,6 +8,8 @@
   links:
     - {type: "PDF", url: "https://arxiv.org/abs/2503.19447"}
     - {type: "Artefact", url: "https://github.com/jasonyu1996/anvil"}
+    - {type: "Playground", url: "https://anvil.kisp-lab.org/"}
+    - {type: "Docs", url: "https://docs.anvil.kisp-lab.org/"}
   recent: true
 
 - title: "Model Provenance Testing for Large Language Models"
