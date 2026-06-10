@@ -29,9 +29,7 @@
       # linkedin: https://www.linkedin.com/in/xxxx
       # twitter: https://twitter.com/xxxx
 
-    - name: Kareem Shehata
-      image: ./assets/people/member_kareem.jpeg
-      website: https://kareem.shehata.ca/
+
       # github: https://github.com/jasonyu20
       # linkedin: https://www.linkedin.com/in/xxxx
       # twitter: https://twitter.com/xxxx
@@ -61,6 +59,10 @@
 
     - name: Mallika Prabhakar
       image: ./assets/people/member_mallika.png
+    
+    - name: Diego Meyer
+      image: ./assets/people/diego.jpg
+      linkedin: https://www.linkedin.com/in/dimeyer/
 
 
 - kind: Recent Collaborators
@@ -91,6 +93,9 @@
 
 # - kind: alumni
 #   members:
+    # - name: Kareem Shehata
+    #   image: ./assets/people/member_kareem.jpeg
+    #   website: https://kareem.shehata.ca/
 #     - name: Teodora Baluta
 #       image: ./assets/people/member_teo.jpeg
 #       website: https://teobaluta.github.io/
