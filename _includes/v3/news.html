@@ -1,0 +1,16 @@
+<section id="news" class="section reveal">
+    <div class="container">
+        <div class="section-head">
+            <span class="section-num">02</span>
+            <h2 class="section-title">News</h2>
+        </div>
+        <div class="log">
+            {% for item in site.data.onepage.news %}
+            <div class="log__line">
+                <span class="log__date">{{ item.date }}</span>
+                <span class="log__msg">{{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

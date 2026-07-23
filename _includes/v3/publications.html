@@ -1,0 +1,26 @@
+<section id="publications" class="section reveal">
+    <div class="container">
+        <div class="section-head">
+            <span class="section-num">05</span>
+            <h2 class="section-title">Publications</h2>
+        </div>
+        <div class="pubs">
+            {% for pub in site.data.onepage.publications %}
+            <article class="pub">
+                <h3 class="pub__title">{{ pub.title }}</h3>
+                <p class="pub__authors">{{ pub.authors | join: ", " }}</p>
+                <p class="pub__meta">
+                    {{ pub.shortVenue | default: pub.venue }}{% if pub.location %} <span class="sep">/</span> {{ pub.location }}{% endif %}{% if pub.date %} <span class="sep">/</span> {{ pub.date }}{% endif %}
+                </p>
+                {% if pub.links %}
+                <div class="pub__links">
+                    {% for link in pub.links %}
+                    <a class="flag" href="{{ link.url }}">{{ link.type | downcase | replace: ' ', '-' }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
