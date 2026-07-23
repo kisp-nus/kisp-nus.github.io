@@ -5,7 +5,7 @@
     </div>
     <div class="mt-8">
         <div class="px-6 sm:px-8 mx-auto max-w-screen-md markdown">
-            <p><img src="./assets/group_photo.jpg" alt="Group photo" /></p>
+            <p><img src="{{ '/assets/group_photo.jpg' | relative_url }}" alt="Group photo" /></p>
             {% capture intro_content %}{% include_relative index_intro.md %}{% endcapture %}
             {{ intro_content | markdownify }}
         </div>

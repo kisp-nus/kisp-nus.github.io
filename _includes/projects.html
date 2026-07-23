@@ -114,7 +114,7 @@
             <div class="p-4">
                 <div class="project-icon">
                     <a href="{{ project.url }}">
-                        <img class="mx-auto project-icon-img" alt="{{ project.name }}" src="{{ project.image }}">
+                        <img class="mx-auto project-icon-img" alt="{{ project.name }}" src="{{ project.image | relative_url }}">
                     </a>
                 </div>
                 <div class="mx-auto mt-2 text-center leading-tight"><a href="{{ project.url }}">{{ project.name }}</a></div>
