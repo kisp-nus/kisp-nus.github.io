@@ -45,7 +45,7 @@ _includes/
   archive/…                  Legacy partials
 
 assets/
-  index.css                  Classic styles (prebuilt export)
+  v1.css                     Classic styles (prebuilt export)
   v2.css                     Modern styles (hand-written: design tokens + light/dark)
   people/  projects/  …      Images
 
