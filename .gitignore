@@ -5,3 +5,7 @@ _site
 vendor
 .DS_Store
 Gemfile.lock
+
+.bundle/
+*.run.md
+*.run/
