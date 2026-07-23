@@ -26,21 +26,21 @@
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0c0c14;
-    --surface: #14141f;
-    --surface-2: #1b1b2a;
-    --text: #e9e9f2;
-    --muted: #a2a2b8;
-    --accent: #818cf8;       /* indigo-400 */
-    --accent-ink: #0c0c14;
-    --accent-soft: #1c1e32;
-    --border: #262639;
-    --ring: rgba(129, 140, 248, .4);
-    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px rgba(0, 0, 0, .45);
-    --shadow-lg: 0 2px 6px rgba(0, 0, 0, .5), 0 24px 60px rgba(0, 0, 0, .6);
-  }
+/* Dark theme is applied via [data-theme="dark"] on <html> (default), so it
+   can be toggled manually and persisted, independent of the OS setting. */
+:root[data-theme="dark"] {
+  --bg: #0c0c14;
+  --surface: #14141f;
+  --surface-2: #1b1b2a;
+  --text: #e9e9f2;
+  --muted: #a2a2b8;
+  --accent: #818cf8;       /* indigo-400 */
+  --accent-ink: #0c0c14;
+  --accent-soft: #1c1e32;
+  --border: #262639;
+  --ring: rgba(129, 140, 248, .4);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px rgba(0, 0, 0, .45);
+  --shadow-lg: 0 2px 6px rgba(0, 0, 0, .5), 0 24px 60px rgba(0, 0, 0, .6);
 }
 
 /* ----- reset / base ----- */
@@ -78,9 +78,26 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
   font-size: .7rem; font-weight: 700; color: var(--accent);
   border: 1px solid var(--border); border-radius: 999px; padding: .1rem .45rem;
 }
+.header-right { display: flex; align-items: center; gap: clamp(.5rem, 2vw, 1.4rem); }
 .nav { display: flex; gap: clamp(.5rem, 2vw, 1.4rem); flex-wrap: wrap; }
 .nav a { color: var(--muted); font-weight: 500; font-size: .95rem; }
 .nav a:hover { color: var(--text); text-decoration: none; }
+
+/* theme toggle */
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 999px; flex: none;
+  background: transparent; color: var(--muted); cursor: pointer;
+  border: 1px solid var(--border);
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.theme-toggle:hover { color: var(--text); border-color: var(--accent); background: var(--surface); }
+.theme-toggle svg { width: 18px; height: 18px; }
+.theme-toggle .icon-moon { fill: currentColor; }
+.theme-toggle .icon-sun { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ----- hero ----- */
 .hero {
@@ -174,7 +191,13 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; }
 .footer-brand { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; }
 .footer-tag { color: var(--muted); margin: .2rem 0 .6rem; }
-.footer-nus img { width: 190px; border-radius: var(--radius-sm); }
+.footer-nus-card {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #fff; padding: 1.1rem 1.6rem;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.footer-nus-card:hover { text-decoration: none; }
+.footer-nus-card img { width: 210px; border-radius: 0; }
 
 /* ----- misc ----- */
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
