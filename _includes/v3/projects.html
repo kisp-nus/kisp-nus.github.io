@@ -1,0 +1,22 @@
+<section id="projects" class="section reveal">
+    <div class="container">
+        <div class="section-head">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="projects">
+            {% for project in site.data.onepage.projects %}
+            <a class="tile" href="{{ project.url }}">
+                <span class="tile__arrow">&#8599;</span>
+                <span class="tile__path">~/projects/{{ project.name | downcase }}</span>
+                {% if project.image %}
+                <img class="tile__img" src="{{ project.image | relative_url }}" alt="{{ project.name }}" loading="lazy">
+                {% endif %}
+                <h3 class="tile__name">{{ project.name }}</h3>
+                {% if project.fullname %}<p class="tile__full">{{ project.fullname }}</p>{% endif %}
+                {% if project.description %}<p class="tile__desc">{{ project.description }}</p>{% endif %}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
