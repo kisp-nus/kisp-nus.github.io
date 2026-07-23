@@ -13,7 +13,7 @@
                 <div class="w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/6">
                     <div class="p-4">
                         <a href="{{ member.website }}"><img class="mx-auto rounded my-member-photo"
-                                alt="{{ member.name }}" src="{{ member.image }}"></a>
+                                alt="{{ member.name }}" src="{{ member.image | relative_url }}"></a>
                         <div class="mx-auto mt-2 text-center leading-tight">{{ member.name }}</div>
                         <div class="flex mt-4 justify-center">
                             <span class="mx-1 sm:mx-2">

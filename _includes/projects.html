@@ -10,6 +10,7 @@
         text-align: center;
         margin: 10px;
         width: 33.333333%;
+        transition: transform 0.2s;
     }
     .project-icon-img {
         object-fit: cover;
@@ -18,56 +19,30 @@
         width: 150px;
         cursor: pointer;
     }
+    /* Mobile-first: description sits in the normal flow, always visible */
     .project-description {
-        display: none;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        white-space: wrap;
-        top: 100%;
-        width: 200px;
+        width: 100%;
+        margin-top: 10px;
         padding: 10px;
     }
-    .project {
-        transition: transform 0.2s;
-    }
-    .project:hover {
-        transform: scale(1.2);
-    }
 
-    .project:hover .project-description {
-        display: block;
-    }
-
-    /* For small screens, display projects in columns, display descriptions */
-    @media screen {
+    /* Small screens: stack projects in a column, descriptions shown inline */
+    @media (max-width: 767px) {
         .projects-container {
             flex-direction: column;
             align-items: center;
             padding-bottom: 20px;
         }
-        
+
         .project {
             width: 90%;
             margin: 10px;
-            position: static;
-        }
-        
-        .project:hover {
-            transform: none;
-        }
-        
-        .project-description {
-            position: static;
-            display: block;
-            left: auto;
-            transform: none;
-            width: 100%;
-            margin-top: 10px;
         }
     }
 
-    /* For medium screens, display projects in rows, display descriptions */
+    /* Medium screens and up: lay projects out in a row and turn the
+       description into a floating overlay that fades in on hover, so
+       revealing it never reflows the page. */
     @media (min-width: 768px) {
         .md\:projects-container {
             flex-direction: row;
@@ -78,19 +53,37 @@
         .md\:project {
             width: 25%;
             margin: 20px;
-            position: static;
+            position: relative;
         }
 
+        .project:hover {
+            transform: scale(1.2);
+            z-index: 10;
+        }
+
+        .project-description {
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%) translateY(-6px);
+            width: 200px;
+            margin-top: 0;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .project:hover .project-description {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
     }
 
-    /* For large screens, display projects in rows, hide descriptions until hover */
     @media (min-width: 1024px) {
         .lg\:project {
             width: 20%;
-        }
-
-        .lg\:project-description {
-            display: none;
         }
     }
 
@@ -114,12 +107,12 @@
             <div class="p-4">
                 <div class="project-icon">
                     <a href="{{ project.url }}">
-                        <img class="mx-auto project-icon-img" alt="{{ project.name }}" src="{{ project.image }}">
+                        <img class="mx-auto project-icon-img" alt="{{ project.name }}" src="{{ project.image | relative_url }}">
                     </a>
                 </div>
                 <div class="mx-auto mt-2 text-center leading-tight"><a href="{{ project.url }}">{{ project.name }}</a></div>
                 <div class="mx-auto mt-1 text-center leading-tight font-light">{{ project.fullname }}</div>
-                <div class="project-description md:project-description lg:project-description xl:project-description absolute
+                <div class="project-description md:project-description lg:project-description xl:project-description
                 px-2 py-2 rounded-sm text-center text-sm md:text-base lg:text-l text-white bg-indigo-900">
                     {{ project.description }}
                 </div>
