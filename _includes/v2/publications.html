@@ -1,0 +1,25 @@
+<section id="publications" class="section">
+    <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <ul class="pub-list">
+            {% for pub in site.data.onepage.publications %}
+            <li class="pub-item">
+                <h3 class="pub-title">{{ pub.title }}</h3>
+                <p class="pub-authors">{{ pub.authors | join: ", " }}</p>
+                <p class="pub-meta">
+                    <span class="pub-venue">{{ pub.shortVenue | default: pub.venue }}</span>
+                    {% if pub.location %} &middot; {{ pub.location }}{% endif %}
+                    {% if pub.date %} &middot; {{ pub.date }}{% endif %}
+                </p>
+                {% if pub.links %}
+                <div class="pub-links">
+                    {% for link in pub.links %}
+                    <a class="chip" href="{{ link.url }}">{{ link.type }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,13 @@
+<section id="news" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">News</h2>
+        <ul class="news-list">
+            {% for item in site.data.onepage.news %}
+            <li class="news-item">
+                <span class="news-date">{{ item.date }}</span>
+                <span class="news-content">{{ item.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
