@@ -1,0 +1,14 @@
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                {% capture intro_content %}{% include_relative index_intro.md %}{% endcapture %}
+                {{ intro_content | markdownify }}
+            </div>
+            <figure class="about-figure">
+                <img src="{{ '/assets/group_photo.jpg' | relative_url }}" alt="KISP Lab group photo" loading="lazy">
+            </figure>
+        </div>
+    </div>
+</section>

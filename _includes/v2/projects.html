@@ -1,0 +1,17 @@
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="card-grid projects-grid">
+            {% for project in site.data.onepage.projects %}
+            <a class="card project-card" href="{{ project.url }}">
+                {% if project.image %}
+                <img class="project-img" src="{{ project.image | relative_url }}" alt="{{ project.name }}" loading="lazy">
+                {% endif %}
+                <h3 class="card-title">{{ project.name }}</h3>
+                {% if project.fullname %}<p class="card-sub">{{ project.fullname }}</p>{% endif %}
+                {% if project.description %}<p class="card-desc">{{ project.description }}</p>{% endif %}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
