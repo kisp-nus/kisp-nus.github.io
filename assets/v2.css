@@ -70,7 +70,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--border);
 }
-.header-inner { display: flex; align-items: center; justify-content: space-between; height: 4rem; gap: 1rem; }
+.header-inner { display: flex; align-items: center; height: 4rem; gap: 1rem; }
 .brand { display: inline-flex; align-items: baseline; gap: .4rem; font-weight: 800; letter-spacing: -0.03em; }
 .brand:hover { text-decoration: none; }
 .brand-mark { font-size: 1.4rem; color: var(--text); }
@@ -78,8 +78,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
   font-size: .7rem; font-weight: 700; color: var(--accent);
   border: 1px solid var(--border); border-radius: 999px; padding: .1rem .45rem;
 }
-.header-right { display: flex; align-items: center; gap: clamp(.5rem, 2vw, 1.4rem); }
-.nav { display: flex; gap: clamp(.5rem, 2vw, 1.4rem); flex-wrap: wrap; }
+.nav { display: flex; align-items: center; gap: clamp(.5rem, 2vw, 1.4rem); margin-left: auto; }
 .nav a { color: var(--muted); font-weight: 500; font-size: .95rem; }
 .nav a:hover { color: var(--text); text-decoration: none; }
 
@@ -98,6 +97,21 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .theme-toggle .icon-sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* Narrow screens: keep brand + toggle on the top row, drop the nav to its
+   own row as a horizontally scrollable strip (scrollbar hidden). */
+@media (max-width: 640px) {
+  .header-inner { flex-wrap: wrap; height: auto; row-gap: .5rem; padding-block: .55rem; }
+  .brand { order: 1; }
+  .theme-toggle { order: 2; margin-left: auto; }
+  .nav {
+    order: 3; flex-basis: 100%; margin-left: 0;
+    flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;            /* Firefox */
+  }
+  .nav::-webkit-scrollbar { display: none; }  /* Chrome / Safari */
+  .nav a { white-space: nowrap; }
+}
 
 /* ----- hero ----- */
 .hero {
