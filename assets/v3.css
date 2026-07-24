@@ -12,8 +12,8 @@
   --text: #c9d4e2;
   --text-bright: #eef3f9;
   --muted: #6b7787;
-  --accent: #c6f24e;          /* electric lime */
-  --accent-2: #46e6c4;        /* teal */
+  --accent: #ff9e3d;          /* amber orange */
+  --accent-2: #ffd166;        /* gold */
   --accent-ink: #0a0e14;
   --border: color-mix(in srgb, #8aa0b6 16%, transparent);
   --border-bright: color-mix(in srgb, var(--accent) 45%, transparent);
