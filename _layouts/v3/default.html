@@ -11,7 +11,7 @@
     {% include v3/footer.html %}
 
     <script>
-        // Theme toggle: flip data-theme and remember the choice.
+        // Theme toggle: flip data-theme, remember it, and reflect it in the URL.
         (function () {
             var btn = document.getElementById('theme-toggle');
             if (!btn) return;
@@ -20,6 +20,11 @@
                 var next = isDark ? 'light' : 'dark';
                 document.documentElement.setAttribute('data-theme', next);
                 try { localStorage.setItem('theme-v3', next); } catch (e) {}
+                try {
+                    var url = new URL(location.href);
+                    url.searchParams.set('theme', next);
+                    history.replaceState(null, '', url);
+                } catch (e) {}
             });
         })();
     </script>

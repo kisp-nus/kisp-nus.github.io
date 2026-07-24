@@ -2,11 +2,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
-        // Apply saved theme before first paint to avoid a flash (default: dark).
+        // Theme before first paint: ?theme= URL param wins, then saved choice
+        // (default: dark).
         (function () {
             try {
-                var t = localStorage.getItem('theme-v3');
-                if (t) document.documentElement.setAttribute('data-theme', t);
+                var p = new URLSearchParams(location.search).get('theme');
+                var t = (p === 'light' || p === 'dark') ? p : localStorage.getItem('theme-v3');
+                if (p === 'light' || p === 'dark') localStorage.setItem('theme-v3', p);
+                if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
             } catch (e) {}
         })();
     </script>
