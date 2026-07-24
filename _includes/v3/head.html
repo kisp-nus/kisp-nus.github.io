@@ -1,9 +1,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // Apply saved theme before first paint to avoid a flash (default: dark).
+        (function () {
+            try {
+                var t = localStorage.getItem('theme-v3');
+                if (t) document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
     <title>KISP Lab // Keep It Secure and Private</title>
     <meta name="description" content="{{ site.description }}">
-    <meta name="color-scheme" content="dark">
+    <meta name="color-scheme" content="dark light">
     <meta property="og:title" content="KISP Lab">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:type" content="website">
