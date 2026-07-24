@@ -87,9 +87,6 @@
       image: ./assets/people/lee.png
       website:
 
-    - name: Fu Yihao
-      image: ./assets/people/yihao.png
-      website: https://www.linkedin.com/in/yihao-fu-6b6801263/
 
 # - kind: alumni
 #   members:
