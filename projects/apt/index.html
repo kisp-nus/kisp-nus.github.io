@@ -52,6 +52,9 @@
     <h1>Automated Program Translation Research at KISP Lab, NUS</h1>
     
     <h2>Research Projects</h2>
+    <h3>Mostly Automatic Translation of Language Interpreters from C to Safe Rust (arxiv 2026)</h3>
+    <p>Authors: Bo Wang, Brandon Paulsen, Joey Dodds, Daniel Kroening, Umang Mathur, Prateek Saxena</p>
+    <p>Abstract: We present Reboot, a mostly-automatic technique that translates real-world interpreter programs from C to safe Rust. Using Reboot, we translated six interpreters ranging from 6k to 23k lines of C code to safe Rust, with each translation requiring only 1 to 11 brief user interventions. All translations pass 100% of the provided test suites and achieve 62%-92% pass rates on separately created validation tests. A security case study on mujs shows that memory vulnerabilities such as heap buffer overflows and use-after-free present in C are eliminated in the safe Rust translation.</p>
     <h3>Adversarial Agent Collaboration for C to Rust Translation (arxiv 2025)</h3>
     <p>Authors: Tianyu Li, Ruishi Li, Bo Wang, Brandon Paulsen, Umang Mathur, Prateek Saxena</p>
     <p>Abstract: In this work, we present ACToR (Adversarial C To Rust translator), a simple LLM agent-based approach. Inspired by GANs, ACToR pits a generator agent against a discriminator agent, which collaborate to iteratively generate a Rust translation. On each iteration, the translator agent synthesizes and refines a Rust translation to pass an existing suite of tests, and then the discriminator agent finds new failing tests. We demonstrate that ACToR translates all of the 63 real-world command line utilities considered in our benchmarks, which have an average size of 485 lines of code, and it achieves over 90% test pass rate with zero human intervention. To our knowledge, it is the first such system that reliably translates C programs of this scale. Furthermore, ACToR improves translation correctness by up to 18.9% compared to baseline, non-adversarial approaches.</p>
@@ -202,7 +205,7 @@ window._EH_ = {};
 window._EH_.tmpl_set_VS_default = (default_keys) => {
   return () => {
     console.log("set_VS_default", default_keys);
-    for (let paper of ["SynGuar", "DuoGlot", "TransMap", "C2Rust", "SKEL", "ACToR"]) {
+    for (let paper of ["Reboot", "SynGuar", "DuoGlot", "TransMap", "C2Rust", "SKEL", "ACToR"]) {
       if (! default_keys.includes(paper)) {
         VSS_SET("paper", paper, false);
       } else {
@@ -226,7 +229,8 @@ window._EH_.set_VS_transmap = window._EH_.tmpl_set_VS_default(["TransMap"]);
 window._EH_.set_VS_c2rust = window._EH_.tmpl_set_VS_default(["C2Rust"]);
 window._EH_.set_VS_skel = window._EH_.tmpl_set_VS_default(["SKEL"]);
 window._EH_.set_VS_actor = window._EH_.tmpl_set_VS_default(["ACToR"]);
-window._EH_.set_VS_init = window._EH_.tmpl_set_VS_default(["ACToR", "SKEL"]);
+window._EH_.set_VS_reboot = window._EH_.tmpl_set_VS_default(["Reboot"]);
+window._EH_.set_VS_init = window._EH_.tmpl_set_VS_default(["Reboot", "ACToR", "SKEL"]);
 window._EH_.unfoldPost = function(e) {
   // e.preventDefault();
   // find paperkey of parent.
@@ -269,10 +273,10 @@ window._F_JSONML_MAIN = () => {
             ["div.loc-cell-inner", "10-100 LoC"]
           ],
           ["div.my-diagram-cell.flex2", 
-            ["div.loc-cell-inner", "100-1000 LoC"]
+            ["div.loc-cell-inner", "100-2000 LoC"]
           ],
           ["div.my-diagram-cell.flex2",
-            ["div.loc-cell-inner", "1000+ LoC"]
+            ["div.loc-cell-inner", "2k-20k LoC"]
           ],
         ],
         ["div.my-diagram-row",
@@ -291,10 +295,13 @@ window._F_JSONML_MAIN = () => {
           ["div.my-diagram-cell", 
             ["div.work-cell-inner" + is_selected("SKEL"), {onclick: window._EH_.set_VS_skel}, "SKEL", ["br"], "PLDI 2025"]
           ],
-          ["div.my-diagram-cell", 
+          ["div.my-diagram-cell",
             ["div.work-cell-inner" + is_selected("ACToR"), {onclick: window._EH_.set_VS_actor}, "ACToR", ["br"], "arxiv"]
           ],
-          // ["div.my-diagram-cell", 
+          ["div.my-diagram-cell",
+            ["div.work-cell-inner" + is_selected("Reboot"), {onclick: window._EH_.set_VS_reboot}, "Reboot", ["br"], "arxiv 2026"]
+          ],
+          // ["div.my-diagram-cell",
           //   ["div.work-cell-inner" + is_selected("Working"), {onclick: window._EH_.set_VS_working}, "Working on it!", ["br"], "..."]
           // ],
         ],
@@ -431,8 +438,32 @@ window._F_JSONML_MAIN = () => {
           f_my_diagram(),
           f_separator(),
           f_vspace(),
-          ["accordwrap", 
-            f_publication("ACToR", "Adversarial Agent Collaboration for C to Rust Translation", 
+          ["accordwrap",
+            f_publication("Reboot", "Mostly Automatic Translation of Language Interpreters from C to Safe Rust",
+              [
+                {link: "https://halocore.github.io/", name: "Bo Wang", is_cofirst: false},
+                {link: "https://www.amazon.science/author/brandon-paulsen", name: "Brandon Paulsen", is_cofirst: false},
+                {link: "https://www.amazon.science/author/joey-dodds", name: "Joey Dodds", is_cofirst: false},
+                {link: "http://www.kroening.com/", name: "Daniel Kroening", is_cofirst: false},
+                {link: "https://www.comp.nus.edu.sg/~umathur/", name: "Umang Mathur", is_cofirst: false},
+                {link: "https://www.comp.nus.edu.sg/~prateeks/", name: "Prateek Saxena", is_cofirst: false},
+              ],
+              [
+                {link: "https://arxiv.org/pdf/2606.27122", name: "Paper", type: "pdf"},
+                {link: "https://arxiv.org/abs/2606.27122", name: "arXiv", type: "arxiv"},
+              ],
+              "arXiv 2026",
+              f_nested_details("Reboot",
+                ["Abstract", [
+                  "We present Reboot, a mostly-automatic technique that translates real-world interpreter programs from C to safe Rust. Using Reboot, we translated six interpreters ranging from 6k to 23k lines of C code to safe Rust, with each translation requiring only 1 to 11 brief user interventions. All translations pass 100% of the provided test suites and achieve 62%-92% pass rates on separately created validation tests that were never exposed to the system. A security case study on mujs shows that memory vulnerabilities such as heap buffer overflows and use-after-free present in C are eliminated in the safe Rust translation. Two ideas underpin Reboot: feature reduction decomposes the translation by program features into a sequence of complete, testable milestones, translated incrementally from the simplest version; and a multi-agent architecture orchestrates inherently unreliable coding agents through automated validation and feedback."]],
+              ),
+              f_carousel([
+                {link: "./static/images/reboot/workflow.png", caption: "The Reboot translation workflow: feature reduction produces a sequence of complete, runnable milestones, translated incrementally from the simplest version."},
+                {link: "./static/images/reboot/architecture.png", caption: "Reboot's three-level multi-agent architecture, orchestrating coding agents through automated validation and feedback."},
+                {link: "./static/images/reboot/performance.png", caption: "Runtime of the translated safe Rust (Reboot) versus the original C baseline across six interpreters."},
+              ])
+            ),
+            f_publication("ACToR", "Adversarial Agent Collaboration for C to Rust Translation",
               [
                 {link: "https://tianyuli12.github.io/", name: "Tianyu Li", is_cofirst: false},
                 {link: "https://zero0one1.github.io/", name: "Ruishi Li", is_cofirst: false},
