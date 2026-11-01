@@ -1,3 +1,5 @@
+- date: "Nov 01"
+  content: "We’ve released a [blog post](https://focs-lab.comp.nus.edu.sg/blog/memory-safety-audit/) and accompanying [paper](https://github.com/focs-lab/memory-safety-proof-audit/raw/refs/heads/main/paper/main.pdf) on why specifications matter in memory-safety verification, drawing on our audit of the Anthropic–Theorem effort."
 - date: "Oct 24"
   content: "\"[Anvil: A General-Purpose Timing-Safe Hardware Description Language](https://arxiv.org/abs/2503.19447)\" @ ASPLOS 2026"
 - date: "Sep 19"
