@@ -9,9 +9,11 @@ body {
 .memory-safety-callout {
   margin: 1.5rem 0;
   padding: 1.25rem;
+  border-top: 2px solid #fff;
   border-left: 4px solid #3884ff;
-  border-radius: 4px;
-  background-color: #f3f7ff;
+  border-radius: 4.5px;
+  background-color: #fafafa;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 3px 0 rgba(0, 0, 0, 0.2);
   text-align: left;
 }
 
@@ -25,25 +27,34 @@ body {
 .memory-safety-callout-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1.25rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
   margin-top: 0.75rem;
-}
-
-.memory-safety-callout-links a {
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
 }
 
 .my-diagram-wrapper {
   overflow-x: auto;
   scrollbar-width: thin;
-  /* Default to rightmost scroll position */
-  transform: scaleX(-1);
+  scrollbar-color: #c5cbd3 transparent;
+  padding-bottom: 6px;
 }
 
-/* Fix content orientation after parent transform */
-.my-diagram-wrapper > * {
-  transform: scaleX(-1);
+.my-diagram-wrapper::-webkit-scrollbar {
+  height: 4px;
+}
+
+.my-diagram-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.my-diagram-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #c5cbd3;
+}
+
+.my-diagram-wrapper:focus-visible {
+  outline: 2px solid #3884ff;
+  outline-offset: 2px;
 }
 
 .my-member-row {
@@ -89,14 +100,33 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 780px;
+  min-width: 900px;
 }
 
 .loc-cell-inner {
-  background-color: #f5f5f5;
-  /* border-radius: 5px; */
-  padding: 5px;
+  --loc-accent: #a5c5f7;
+  background: linear-gradient(135deg, #f5f8ff, #e8f0ff);
+  border: 1px solid #dbe6f6;
+  border-bottom: 3px solid var(--loc-accent);
+  border-radius: 6px;
+  color: #34547c;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  padding: 6px 5px;
   margin: 5px;
+}
+
+.my-diagram-cell:nth-child(2) .loc-cell-inner {
+  --loc-accent: #7daaf0;
+}
+
+.my-diagram-cell:nth-child(3) .loc-cell-inner {
+  --loc-accent: #568fea;
+}
+
+.my-diagram-cell:nth-child(4) .loc-cell-inner {
+  --loc-accent: #3884ff;
 }
 
 .work-cell-inner {
@@ -105,6 +135,8 @@ body {
   padding: 5px;
   margin: 5px;
   font-weight: bold;
+  flex: 1;
+  white-space: nowrap;
 }
 
 .work-cell-inner.is-selected {
@@ -116,11 +148,14 @@ body {
   display: flex;
   width: 100%;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
 }
 
 .my-diagram-cell {
   flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-diagram-cell.flex2 {
@@ -306,6 +341,10 @@ body {
 
 .slider-pagination .slider-page {
   background: #000000;
+}
+
+.results-carousel .slider-pagination {
+  position: static;
 }
 
 .eql-cntrb { 
@@ -553,6 +592,62 @@ body {
 
 /* Add responsive font sizing */
 @media screen and (max-width: 768px) {
+  .my-diagram {
+    min-width: 780px;
+  }
+
+  #hero > .hero-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #hero > .hero-body > .container > .columns {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #hero > .hero-body > .container > .columns > .column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  accordwrap > .material-card,
+  accordwrap > .material-card:hover,
+  accordwrap > .material-card:active {
+    padding: 10px 12px;
+    border-top: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  accordwrap > .material-card > .material-card-content,
+  .nested-details > .material-card > .material-card-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nested-details > .material-card,
+  .nested-details > .material-card:hover,
+  .nested-details > .material-card:active {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .memory-safety-callout {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.25rem 12px;
+    border-top: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .my-diagram-wrapper {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
   .publication-title.paper-title {
     font-size: 1.5rem !important;
   }
@@ -592,7 +687,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .my-diagram {
-    min-width: 520px;
+    min-width: 630px;
   }
 
   .publication-title.paper-title {

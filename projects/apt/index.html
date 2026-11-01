@@ -55,7 +55,7 @@
     <h3>Mostly Automatic Translation of Language Interpreters from C to Safe Rust (arxiv 2026)</h3>
     <p>Authors: Bo Wang, Brandon Paulsen, Joey Dodds, Daniel Kroening, Umang Mathur, Prateek Saxena</p>
     <p>Abstract: We present Reboot, a mostly-automatic technique that translates real-world interpreter programs from C to safe Rust. Using Reboot, we translated six interpreters ranging from 6k to 23k lines of C code to safe Rust, with each translation requiring only 1 to 11 brief user interventions. All translations pass 100% of the provided test suites and achieve 62%-92% pass rates on separately created validation tests. A security case study on mujs shows that memory vulnerabilities such as heap buffer overflows and use-after-free present in C are eliminated in the safe Rust translation.</p>
-    <h3>Adversarial Agent Collaboration for C to Rust Translation (arxiv 2025)</h3>
+    <h3>Adversarial Agent Collaboration for Correctness Improvements of C to Safe Rust Translation (arXiv 2026)</h3>
     <p>Authors: Tianyu Li, Ruishi Li, Bo Wang, Brandon Paulsen, Umang Mathur, Prateek Saxena</p>
     <p>Abstract: In this work, we present ACToR (Adversarial C To Rust translator), a simple LLM agent-based approach. Inspired by GANs, ACToR pits a generator agent against a discriminator agent, which collaborate to iteratively generate a Rust translation. On each iteration, the translator agent synthesizes and refines a Rust translation to pass an existing suite of tests, and then the discriminator agent finds new failing tests. We demonstrate that ACToR translates all of the 63 real-world command line utilities considered in our benchmarks, which have an average size of 485 lines of code, and it achieves over 90% test pass rate with zero human intervention. To our knowledge, it is the first such system that reliably translates C programs of this scale. Furthermore, ACToR improves translation correctness by up to 18.9% compared to baseline, non-adversarial approaches.</p>
 
@@ -263,7 +263,7 @@ window._F_JSONML_MAIN = () => {
     function is_selected(paper) {
       return VSS_GET("paper", paper) ? ".is-selected" : "";
     }
-    return ["div.my-diagram-wrapper",
+    return ["div.my-diagram-wrapper", {tabindex: "0", role: "region", "aria-label": "Research overview by program size; scroll horizontally to explore"},
       ["div.my-diagram", 
         ["div.my-diagram-row",
           ["div.my-diagram-cell", 
@@ -296,7 +296,7 @@ window._F_JSONML_MAIN = () => {
             ["div.work-cell-inner" + is_selected("SKEL"), {onclick: window._EH_.set_VS_skel}, "SKEL", ["br"], "PLDI 2025"]
           ],
           ["div.my-diagram-cell",
-            ["div.work-cell-inner" + is_selected("ACToR"), {onclick: window._EH_.set_VS_actor}, "ACToR", ["br"], "arxiv"]
+            ["div.work-cell-inner" + is_selected("ACToR"), {onclick: window._EH_.set_VS_actor}, "ACToR", ["br"], "arXiv 2026"]
           ],
           ["div.my-diagram-cell",
             ["div.work-cell-inner" + is_selected("Reboot"), {onclick: window._EH_.set_VS_reboot}, "Reboot", ["br"], "arxiv 2026"]
@@ -440,9 +440,12 @@ window._F_JSONML_MAIN = () => {
             ["h3", {id: "memory-safety-callout-title"}, "What do memory-safety proofs guarantee?"],
             ["p", "Reliable program translation requires clear specifications of correctness and safety. Our new blog post and accompanying paper examine why specifications matter in memory-safety verification, drawing on our audit of the Anthropic–Theorem effort."],
             ["div.memory-safety-callout-links",
-              ["a", {href: "https://focs-lab.comp.nus.edu.sg/blog/memory-safety-audit/"}, "Read the blog post"],
-              ["a", {href: "https://github.com/focs-lab/memory-safety-proof-audit/raw/refs/heads/main/paper/main.pdf"}, "Paper"],
-              ["a", {href: "https://github.com/focs-lab/memory-safety-proof-audit"}, "Supporting evidence"],
+              ["a.external-link.button.is-normal.is-rounded.is-dark", {href: "https://focs-lab.comp.nus.edu.sg/blog/memory-safety-audit/"},
+                ["span.icon", ["i.fas.fa-book-open", {"aria-hidden": "true"}]], ["span", "Read the blog post"]],
+              ["a.external-link.button.is-normal.is-rounded.is-dark", {href: "https://github.com/focs-lab/memory-safety-proof-audit/raw/refs/heads/main/paper/main.pdf"},
+                ["span.icon", ["i.fas.fa-file-pdf", {"aria-hidden": "true"}]], ["span", "Paper"]],
+              ["a.external-link.button.is-normal.is-rounded.is-dark", {href: "https://github.com/focs-lab/memory-safety-proof-audit"},
+                ["span.icon", ["i.fab.fa-github", {"aria-hidden": "true"}]], ["span", "Supporting evidence"]],
             ],
           ],
           f_separator(),
@@ -472,7 +475,7 @@ window._F_JSONML_MAIN = () => {
                 {link: "./static/images/reboot/performance.png", caption: "Runtime of the translated safe Rust (Reboot) versus the original C baseline across six interpreters."},
               ])
             ),
-            f_publication("ACToR", "Adversarial Agent Collaboration for C to Rust Translation",
+            f_publication("ACToR", "Adversarial Agent Collaboration for Correctness Improvements of C to Safe Rust Translation",
               [
                 {link: "https://tianyuli12.github.io/", name: "Tianyu Li", is_cofirst: false},
                 {link: "https://zero0one1.github.io/", name: "Ruishi Li", is_cofirst: false},
@@ -486,7 +489,7 @@ window._F_JSONML_MAIN = () => {
                 {link: "https://github.com/kisp-nus/ACToR", name: "Code", type: "github"},
                 // {link: "https://github.com/lty12b9b0a1/todo", name: "Code", type: "github"},
               ],
-              "arxiv",
+              "arXiv 2026",
               f_nested_details("ACToR", 
                 ["Abstract", [
                   "In this work, we present ACToR (Adversarial C To Rust translator), a simple LLM agent-based approach. Inspired by GANs, ACToR pits a generator agent against a discriminator agent, which collaborate to iteratively generate a Rust translation. On each iteration, the translator agent synthesizes and refines a Rust translation to pass an existing suite of tests, and then the discriminator agent finds new failing tests. We demonstrate that ACToR translates all of the 63 real-world command line utilities considered in our benchmarks, which have an average size of 485 lines of code, and it achieves over 90% test pass rate with zero human intervention. To our knowledge, it is the first such system that reliably translates C programs of this scale. Furthermore, ACToR improves translation correctness by up to 18.9% compared to baseline, non-adversarial approaches."]],
@@ -579,7 +582,7 @@ window._F_JSONML_MAIN = () => {
                 {link: "https://halocore.github.io/", name: "Bo Wang", is_cofirst: false},
                 {link: "https://aashishkolluri.github.io/", name: "Aashish Kolluri", is_cofirst: false},
                 {link: "https://teobaluta.github.io/", name: "Teodora Baluta", is_cofirst: false},
-                {linl: "https://sites.google.com/view/ivica-nikolic-sg/home", name: "Ivica Nikolić", is_cofirst: false},
+                {link: "https://sites.google.com/view/ivica-nikolic-sg/home", name: "Ivica Nikolić", is_cofirst: false},
                 {link: "https://www.comp.nus.edu.sg/~prateeks/", name: "Prateek Saxena", is_cofirst: false},
               ], 
               [
@@ -699,6 +702,10 @@ function main() {
   window.HELP_IMPROVE_VIDEOJS = false;
   window._EH_.set_VS_init();
   window._rerender();
+
+  // Start with the newest work visible, using normal scroll coordinates.
+  const overview = document.querySelector('.my-diagram-wrapper');
+  overview.scrollLeft = overview.scrollWidth;
 
   function init_carousel() {
     // Check for click events on the navbar burger icon
