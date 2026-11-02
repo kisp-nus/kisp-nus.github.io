@@ -6,30 +6,14 @@ body {
   font-weight: 300;
 }
 
-.memory-safety-callout {
-  margin: 1.5rem 0;
-  padding: 1.25rem;
-  border-top: 2px solid #fff;
-  border-left: 4px solid #3884ff;
-  border-radius: 4.5px;
-  background-color: #fafafa;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-  text-align: left;
+.blog-notice {
+  margin-bottom: 1.5rem;
+  padding: 0 12px;
 }
 
-.memory-safety-callout h3 {
-  margin-bottom: 0.5rem;
-  color: #363636;
-  font-size: 1.15rem;
-  font-weight: 600;
-}
-
-.memory-safety-callout-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
+.blog-notice a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .my-diagram-wrapper {
@@ -630,15 +614,6 @@ body {
   .nested-details > .material-card:hover,
   .nested-details > .material-card:active {
     padding: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .memory-safety-callout {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1.25rem 12px;
-    border-top: 1px solid #ddd;
     border-radius: 0;
     box-shadow: none;
   }
