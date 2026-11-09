@@ -1,3 +1,6 @@
+- date: "Nov 08"
+  content: "\"[A Type System for Communication-Safe Hardware Design](https://arxiv.org/abs/2610.26599)\" @ POPL 2027 (see [artefacts](https://github.com/AnvilHDL))"
+
 - date: "Nov 01"
   content: "We’ve released a [blog post](https://focs-lab.comp.nus.edu.sg/blog/memory-safety-audit/) and accompanying [paper](https://github.com/focs-lab/memory-safety-proof-audit/blob/main/paper/main.pdf) on why specifications matter in memory-safety verification, drawing on our audit of the Anthropic–Theorem effort."
 - date: "Oct 24"

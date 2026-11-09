@@ -1,4 +1,17 @@
 
+- title: "A Type System for Communication-Safe Hardware Design"
+  authors: ["Aditya Ranjan Jha*", "Jason Zhijingcheng Yu*", "Umang Mathur", "Prateek Saxena"]
+  venue: "ACM SIGPLAN Symposium on Principles of Programming Languages"
+  shortVenue: "POPL 2027"
+  location: "Mexico City, Mexico"
+  date: "January 2027"
+  links:
+    - {type: "PDF", url: "https://arxiv.org/abs/2610.26599"}
+    - {type: "Artefact", url: "https://github.com/AnvilHDL/pact"}
+    - {type: "Proofs", url: "https://github.com/AnvilHDL/Pact-formalization"}
+    - {type: "Benchmarks", url: "https://github.com/AnvilHDL/Pact-Experiments"}
+  recent: true
+
 - title: "Anvil: A General-Purpose Timing-Safe Hardware Description Language"
   authors: ["Jason Zhijingcheng Yu*", "Aditya Ranjan Jha*", "Umang Mathur", "Trevor E. Carlson", "Prateek Saxena"]
   venue: "International Conference on Architectural Support for Programming Languages and Operating Systems"

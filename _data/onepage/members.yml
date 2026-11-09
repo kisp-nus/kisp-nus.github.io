@@ -52,10 +52,9 @@
 
     - name: Aditya Ranjan Jha
       image: ./assets/people/aditya.JPG
-      website: https://arj4web.github.io/bio/
+      website: https://arjha.com/
       github: https://github.com/arj4web/
-      linkedin: https://www.linkedin.com/in/adi4comp/
-      twitter: https://twitter.com/adi4web
+      linkedin: https://www.linkedin.com/in/adi4web/
 
     - name: Mallika Prabhakar
       image: ./assets/people/member_mallika.png
