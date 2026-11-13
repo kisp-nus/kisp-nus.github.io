@@ -58,6 +58,8 @@
 
     - name: Mallika Prabhakar
       image: ./assets/people/member_mallika.png
+      github: https://github.com/MallikaPrabhakar
+      linkedin: https://www.linkedin.com/in/mallika-prabhakar-4b7b561b6/
     
     - name: Diego Meyer
       image: ./assets/people/diego.jpg
